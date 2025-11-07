@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Slop-or-Not | EQ-Bench</title>
+<title>Slop-Score | EQ-Bench</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
@@ -468,7 +468,7 @@
     <div class="header">
       <a href="./"><img src="./images/eqbench_logo_sml.png" alt="EQ-bench Logo" class="logo"/></a>
       <div class="header-text">
-        <h1>Slop-or-Not</h1>
+        <h1>Slop-Score</h1>
       </div>
     </div>
     <p>Emotional Intelligence Benchmarks for LLMs</p>
@@ -483,7 +483,7 @@
       <span class="nav-separator">|</span>
       <a href='creative_writing.html'>🎨Creative Writing v3</a>
       <span class="nav-separator">|</span>
-      <b>☢️Slop-or-Not</b>
+      <b>☢️Slop-Score</b>
       <span class="nav-separator">|</span>
       <a href='judgemark-v2.html'>⚖️Judgemark v2.1</a>
       <span class="nav-separator">|</span>
@@ -551,8 +551,8 @@
         <button class="modal-close" id="closeHowItWorksModal">&times;</button>
       </div>
       <div id="howItWorksBody">
-        <h3>What is Slop-or-Not?</h3>
-        <p>Slop-or-Not is a leaderboard and analysis tool for computing how much a given text looks/smells like AI "slop". It looks specifically at words and patterns that occur more frequently in AI text than in human text.</p>
+        <h3>What is Slop-Score?</h3>
+        <p>Slop-Score is a leaderboard and analysis tool for computing how much a given text looks/smells like AI "slop". It looks specifically at words and patterns that occur more frequently in AI text than in human text.</p>
 
         <h3>Not an AI Detector!</h3>
         <p>This tool works differently than most AI detectors: It looks for glaringly over-used patterns, rather than trying to classify the text as AI or human. It will detect words and phrases that smell of AI, but it won't reliably help you avoid AI detection. The best way to avoid AI detectors is to write in your own words.</p>
@@ -574,7 +574,7 @@
         <h3>Slop Lists</h3>
         <p>The slop word and trigram lists are produced using the <a href="https://github.com/sam-paech/slop-forensics" target="_blank" style="color: var(--accent);">slop-forensics toolkit</a>. This tool identifies words and n-grams that are statistically over-represented in LLM outputs compared to human writing.</p>
         <p>The lists were computed by analyzing outputs from 10 different language models on a selection of essay and creative writing prompts, then comparing them against human-authored text.</p>
-        <p>View the lists: <a href="https://github.com/sam-paech/slop-or-not/blob/main/data/slop_list.json" target="_blank" style="color: var(--accent);">Slop Words</a> | <a href="https://github.com/sam-paech/slop-or-not/blob/main/data/slop_list_trigrams.json" target="_blank" style="color: var(--accent);">Slop Trigrams</a></p>
+        <p>View the lists: <a href="https://github.com/sam-paech/slop-score/blob/main/data/slop_list.json" target="_blank" style="color: var(--accent);">Slop Words</a> | <a href="https://github.com/sam-paech/slop-score/blob/main/data/slop_list_trigrams.json" target="_blank" style="color: var(--accent);">Slop Trigrams</a></p>
 
         <h3>Over-represented Words & Trigrams</h3>
         <p>These sections show words and phrases that occur more frequently in the analyzed text than in typical human writing, based on:</p>
@@ -1047,7 +1047,7 @@ function computeSlopScore(slopWordScore, slopTrigramScore, contrastScore) {
   const normContrast = normalizeValue(contrastScore, normalizationRanges.contrast);
 
   // Weighted formula: 45% slop words + 40% not-x-but-y + 15% slop trigrams
-  return (normWords * 0.45 + normContrast * 0.40 + normTrigrams * 0.15) * 100;
+  return (normWords * 0.6 + normContrast * 0.25 + normTrigrams * 0.15) * 100;
 }
 
 function renderLeaderboard(includeUserResult = false) {
@@ -1349,7 +1349,7 @@ function updateRightPanel(entry) {
         data.slop_word_hits,
         'Slop Word Hits',
         hit => `<span class="pill"><b>${hit[0]}</b> <span class="muted">(${hit[1]})</span></span>`,
-        'Matches to a precompiled slop list produced with the <a href="https://github.com/sam-paech/slop-forensics" target="_blank" style="color: var(--accent);">slop-forensics toolkit</a>. The list identifies words that are over-represented in LLM outputs compared to human writing, computed from 10 models\' outputs on essay & creative writing prompts. <a href="https://github.com/sam-paech/slop-or-not/blob/main/data/slop_list.json" target="_blank" style="color: var(--accent);">View slop list</a>'
+        'Matches to a precompiled slop list produced with the <a href="https://github.com/sam-paech/slop-forensics" target="_blank" style="color: var(--accent);">slop-forensics toolkit</a>. The list identifies words that are over-represented in LLM outputs compared to human writing, computed from 10 models\' outputs on essay & creative writing prompts. <a href="https://github.com/sam-paech/slop-score/blob/main/data/slop_list.json" target="_blank" style="color: var(--accent);">View slop list</a>'
       );
     }
 
@@ -1359,7 +1359,7 @@ function updateRightPanel(entry) {
         data.slop_trigram_hits,
         'Slop Trigram Hits',
         hit => `<span class="pill"><b>${hit[0]}</b> <span class="muted">(${hit[1]})</span></span>`,
-        'Matches to a precompiled slop trigram list produced with the <a href="https://github.com/sam-paech/slop-forensics" target="_blank" style="color: var(--accent);">slop-forensics toolkit</a>. The list identifies 3-word phrases that are over-represented in LLM outputs compared to human writing, computed from 10 models\' outputs on essay & creative writing prompts. <a href="https://github.com/sam-paech/slop-or-not/blob/main/data/slop_list_trigrams.json" target="_blank" style="color: var(--accent);">View trigram list</a>'
+        'Matches to a precompiled slop trigram list produced with the <a href="https://github.com/sam-paech/slop-forensics" target="_blank" style="color: var(--accent);">slop-forensics toolkit</a>. The list identifies 3-word phrases that are over-represented in LLM outputs compared to human writing, computed from 10 models\' outputs on essay & creative writing prompts. <a href="https://github.com/sam-paech/slop-score/blob/main/data/slop_list_trigrams.json" target="_blank" style="color: var(--accent);">View trigram list</a>'
       );
     }
 
@@ -1611,7 +1611,7 @@ function showDetailModal(entry) {
         data.slop_word_hits,
         'Slop Word Hits',
         hit => `<span class="pill"><b>${hit[0]}</b> <span class="muted">(${hit[1]})</span></span>`,
-        'Matches to a precompiled slop list produced with the <a href="https://github.com/sam-paech/slop-forensics" target="_blank" style="color: var(--accent);">slop-forensics toolkit</a>. The list identifies words that are over-represented in LLM outputs compared to human writing, computed from 10 models\' outputs on essay & creative writing prompts. <a href="https://github.com/sam-paech/slop-or-not/blob/main/data/slop_list.json" target="_blank" style="color: var(--accent);">View slop list</a>'
+        'Matches to a precompiled slop list produced with the <a href="https://github.com/sam-paech/slop-forensics" target="_blank" style="color: var(--accent);">slop-forensics toolkit</a>. The list identifies words that are over-represented in LLM outputs compared to human writing, computed from 10 models\' outputs on essay & creative writing prompts. <a href="https://github.com/sam-paech/slop-score/blob/main/data/slop_list.json" target="_blank" style="color: var(--accent);">View slop list</a>'
       );
     }
 
@@ -1621,7 +1621,7 @@ function showDetailModal(entry) {
         data.slop_trigram_hits,
         'Slop Trigram Hits',
         hit => `<span class="pill"><b>${hit[0]}</b> <span class="muted">(${hit[1]})</span></span>`,
-        'Matches to a precompiled slop trigram list produced with the <a href="https://github.com/sam-paech/slop-forensics" target="_blank" style="color: var(--accent);">slop-forensics toolkit</a>. The list identifies 3-word phrases that are over-represented in LLM outputs compared to human writing, computed from 10 models\' outputs on essay & creative writing prompts. <a href="https://github.com/sam-paech/slop-or-not/blob/main/data/slop_list_trigrams.json" target="_blank" style="color: var(--accent);">View trigram list</a>'
+        'Matches to a precompiled slop trigram list produced with the <a href="https://github.com/sam-paech/slop-forensics" target="_blank" style="color: var(--accent);">slop-forensics toolkit</a>. The list identifies 3-word phrases that are over-represented in LLM outputs compared to human writing, computed from 10 models\' outputs on essay & creative writing prompts. <a href="https://github.com/sam-paech/slop-score/blob/main/data/slop_list_trigrams.json" target="_blank" style="color: var(--accent);">View trigram list</a>'
       );
     }
 

@@ -1,6 +1,6 @@
 {
-  "qwen/qwen3-4b:free": {
-    "test_model": "qwen/qwen3-4b:free",
+  "qwen/qwen3-4b": {
+    "test_model": "qwen/qwen3-4b",
     "endpoint": "https://openrouter.ai/api/v1/chat/completions",
     "params": {
       "temperature": 0.7,

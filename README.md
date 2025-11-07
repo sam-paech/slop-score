@@ -1,4 +1,4 @@
-# Slop-or-Not: Writing Metrics Analyzer
+# Slop-Score: Writing Metrics Analyzer
 
 A comprehensive text analysis tool that detects AI-generated "slop" patterns, repetitive language, and rhetorical contrast structures in writing.
 
@@ -34,8 +34,8 @@ Finds verbatim repetitions based on top trigram analysis.
 ## File Structure
 
 ```
-slop-or-not/
-├── slop-or-not.html          # Main HTML interface
+slop-score/
+├── slop-score.html          # Main HTML interface
 ├── js/
 │   ├── utils.js              # Text normalization & tokenization
 │   ├── metrics.js            # Core metrics (slop, repetition)
@@ -82,7 +82,7 @@ The contrast detector implements a 2-stage pipeline matching the Python referenc
 
 ## Usage
 
-1. Open `slop-or-not.html` in a modern browser
+1. Open `slop-score.html` in a modern browser
 2. Paste text into the textarea
 3. Click "Analyze"
 4. View metrics and expand sections for details

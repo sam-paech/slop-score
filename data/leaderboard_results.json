@@ -1,7 +1,1889 @@
 {
-  "generated_at": "2025-11-01T10:00:20.336Z",
+  "generated_at": "2025-11-07T04:10:37.939Z",
   "model_count": 22,
   "results": [
+    {
+      "model": "sam-paech/gemma-3-27b-it-antislop",
+      "test_model": "sam-paech/gemma-3-27b-it-antislop",
+      "sample_count": 298,
+      "total_chars": 2416793,
+      "started_at": "2025-11-07T03:42:14.022941+00:00",
+      "completed_at": "2025-11-07T03:50:07.801121+00:00",
+      "metrics": {
+        "slop_list_matches_per_1k_words": 5.605096277130284,
+        "slop_trigram_matches_per_1k_words": 0.17615191803449112,
+        "ngram_repetition_score": 6.23943474709871,
+        "not_x_but_y_per_1k_chars": 0.4592863352384751,
+        "lexical_diversity": {
+          "mattr_500": 0.5990071632449318,
+          "type_token_ratio": 0.05107539302091876,
+          "unique_words": 17687,
+          "total_words": 346292
+        },
+        "vocab_level": 10.719324381300137,
+        "avg_sentence_length": 11.84443101306202,
+        "avg_paragraph_length": 50.74651129333909,
+        "dialogue_frequency": 1.0857363456448277
+      },
+      "slop_word_hits": [
+        [
+          "subtly",
+          34
+        ],
+        [
+          "conclusion",
+          32
+        ],
+        [
+          "scent",
+          30
+        ],
+        [
+          "broader",
+          30
+        ],
+        [
+          "outcomes",
+          29
+        ],
+        [
+          "elias",
+          26
+        ],
+        [
+          "evolving",
+          25
+        ],
+        [
+          "stared",
+          23
+        ],
+        [
+          "furthermore",
+          21
+        ],
+        [
+          "silas",
+          20
+        ],
+        [
+          "whisper",
+          20
+        ],
+        [
+          "implications",
+          20
+        ],
+        [
+          "recognizing",
+          19
+        ],
+        [
+          "relentless",
+          18
+        ],
+        [
+          "thorne",
+          18
+        ],
+        [
+          "gaze",
+          17
+        ],
+        [
+          "paramount",
+          17
+        ],
+        [
+          "paused",
+          16
+        ],
+        [
+          "stillness",
+          16
+        ],
+        [
+          "faded",
+          15
+        ],
+        [
+          "softening",
+          15
+        ],
+        [
+          "shadows",
+          15
+        ],
+        [
+          "schizophrenia",
+          15
+        ],
+        [
+          "systemic",
+          15
+        ],
+        [
+          "pedagogical",
+          15
+        ],
+        [
+          "ignis",
+          14
+        ],
+        [
+          "theron",
+          14
+        ],
+        [
+          "qualitative",
+          14
+        ],
+        [
+          "strategic",
+          14
+        ],
+        [
+          "blinked",
+          13
+        ],
+        [
+          "anya",
+          13
+        ],
+        [
+          "initiatives",
+          13
+        ],
+        [
+          "cultivating",
+          13
+        ],
+        [
+          "frantic",
+          12
+        ],
+        [
+          "sickly",
+          12
+        ],
+        [
+          "organizational",
+          12
+        ],
+        [
+          "proactively",
+          12
+        ],
+        [
+          "glow",
+          11
+        ],
+        [
+          "facilitating",
+          11
+        ],
+        [
+          "lyra",
+          11
+        ],
+        [
+          "delve",
+          11
+        ],
+        [
+          "refine",
+          10
+        ],
+        [
+          "diminish",
+          10
+        ],
+        [
+          "fundamentally",
+          10
+        ],
+        [
+          "inequalities",
+          10
+        ],
+        [
+          "behaviors",
+          10
+        ],
+        [
+          "crucially",
+          9
+        ],
+        [
+          "ethical",
+          9
+        ],
+        [
+          "proactive",
+          9
+        ],
+        [
+          "relational",
+          9
+        ]
+      ],
+      "slop_trigram_hits": [
+        [
+          "something else entirely",
+          8
+        ],
+        [
+          "double edged sword",
+          5
+        ],
+        [
+          "rapidly changing world",
+          5
+        ],
+        [
+          "something else something",
+          2
+        ],
+        [
+          "blood ran cold",
+          2
+        ],
+        [
+          "room fell silent",
+          2
+        ],
+        [
+          "voice barely audible",
+          2
+        ],
+        [
+          "young woman named",
+          2
+        ],
+        [
+          "delicate balancing act",
+          2
+        ],
+        [
+          "key performance indicators",
+          2
+        ],
+        [
+          "new revenue streams",
+          2
+        ],
+        [
+          "cost benefit analysis",
+          2
+        ],
+        [
+          "long term benefits",
+          2
+        ],
+        [
+          "spent countless hours",
+          1
+        ],
+        [
+          "smile spreading across",
+          1
+        ],
+        [
+          "casting long shadows",
+          1
+        ],
+        [
+          "one last time",
+          1
+        ],
+        [
+          "supply chain management",
+          1
+        ],
+        [
+          "goes far beyond",
+          1
+        ],
+        [
+          "long term impact",
+          1
+        ],
+        [
+          "beyond surface level",
+          1
+        ],
+        [
+          "one size fits",
+          1
+        ],
+        [
+          "extended far beyond",
+          1
+        ],
+        [
+          "long term outcomes",
+          1
+        ],
+        [
+          "extend far beyond",
+          1
+        ],
+        [
+          "changing consumer preferences",
+          1
+        ],
+        [
+          "company invested heavily",
+          1
+        ],
+        [
+          "long term stability",
+          1
+        ],
+        [
+          "work life balance",
+          1
+        ],
+        [
+          "provide valuable insights",
+          1
+        ],
+        [
+          "informed decision making",
+          1
+        ],
+        [
+          "long term growth",
+          1
+        ],
+        [
+          "multi pronged approach",
+          1
+        ],
+        [
+          "ensure long term",
+          1
+        ],
+        [
+          "loyal customer base",
+          1
+        ],
+        [
+          "offers valuable insights",
+          1
+        ]
+      ],
+      "top_over_represented": {
+        "words": [
+          {
+            "word": "acnp",
+            "ratio": 8271.416265798778,
+            "count": 10
+          },
+          {
+            "word": "bellweather",
+            "ratio": 3204.284935271415,
+            "count": 6
+          },
+          {
+            "word": "lysandra",
+            "ratio": 3175.5750934249036,
+            "count": 9
+          },
+          {
+            "word": "lorian",
+            "ratio": 1873.6044862059282,
+            "count": 7
+          },
+          {
+            "word": "rostova",
+            "ratio": 1583.5794923752987,
+            "count": 4
+          },
+          {
+            "word": "nefertari",
+            "ratio": 1347.844742477826,
+            "count": 4
+          },
+          {
+            "word": "mentalhealth",
+            "ratio": 1243.6584709305941,
+            "count": 3
+          },
+          {
+            "word": "wasn",
+            "ratio": 1170.5594351201225,
+            "count": 76
+          },
+          {
+            "word": "steepled",
+            "ratio": 1020.0227855614604,
+            "count": 2
+          },
+          {
+            "word": "hadn",
+            "ratio": 1008.5743366833718,
+            "count": 14
+          },
+          {
+            "word": "wakka",
+            "ratio": 823.628048441145,
+            "count": 6
+          },
+          {
+            "word": "keplerian",
+            "ratio": 784.695446258665,
+            "count": 3
+          },
+          {
+            "word": "sundering",
+            "ratio": 691.2575200326626,
+            "count": 4
+          },
+          {
+            "word": "o'riley",
+            "ratio": 654.2310137876603,
+            "count": 6
+          },
+          {
+            "word": "aric",
+            "ratio": 617.5467842991126,
+            "count": 8
+          },
+          {
+            "word": "weren",
+            "ratio": 585.571427625864,
+            "count": 10
+          },
+          {
+            "word": "rasped",
+            "ratio": 560.5442129321325,
+            "count": 2
+          },
+          {
+            "word": "ramses",
+            "ratio": 557.6137554156608,
+            "count": 19
+          },
+          {
+            "word": "imperceptibly",
+            "ratio": 491.838347930104,
+            "count": 9
+          },
+          {
+            "word": "anglerfish",
+            "ratio": 466.2403684182091,
+            "count": 2
+          },
+          {
+            "word": "zipporah",
+            "ratio": 435.12082903146785,
+            "count": 2
+          },
+          {
+            "word": "husbandman",
+            "ratio": 435.12082903146785,
+            "count": 2
+          },
+          {
+            "word": "consciousnesses",
+            "ratio": 426.2259318513032,
+            "count": 4
+          },
+          {
+            "word": "familiars",
+            "ratio": 382.54093727896975,
+            "count": 7
+          },
+          {
+            "word": "prickling",
+            "ratio": 378.97439931791274,
+            "count": 2
+          },
+          {
+            "word": "ignis",
+            "ratio": 352.1771086835752,
+            "count": 12
+          },
+          {
+            "word": "supplicants",
+            "ratio": 337.7612889207626,
+            "count": 2
+          },
+          {
+            "word": "sparrowhawk",
+            "ratio": 336.1629776368674,
+            "count": 5
+          },
+          {
+            "word": "godhood",
+            "ratio": 327.1155068938302,
+            "count": 3
+          },
+          {
+            "word": "wren",
+            "ratio": 316.4927269532952,
+            "count": 41
+          },
+          {
+            "word": "zinnias",
+            "ratio": 315.2171755280366,
+            "count": 2
+          },
+          {
+            "word": "pearlescent",
+            "ratio": 287.4814808327238,
+            "count": 2
+          },
+          {
+            "word": "emptiness",
+            "ratio": 280.5062660294016,
+            "count": 55
+          },
+          {
+            "word": "sketching",
+            "ratio": 278.4204508031903,
+            "count": 30
+          },
+          {
+            "word": "gallstones",
+            "ratio": 264.65366805394956,
+            "count": 7
+          },
+          {
+            "word": "raziel",
+            "ratio": 262.1862266335322,
+            "count": 2
+          },
+          {
+            "word": "harmonic",
+            "ratio": 257.6367850733869,
+            "count": 58
+          },
+          {
+            "word": "eidolon",
+            "ratio": 256.8265210704788,
+            "count": 4
+          },
+          {
+            "word": "fixedly",
+            "ratio": 256.21813948824354,
+            "count": 2
+          },
+          {
+            "word": "stammered",
+            "ratio": 250.98043571866378,
+            "count": 4
+          },
+          {
+            "word": "kairos",
+            "ratio": 250.98043571866378,
+            "count": 4
+          },
+          {
+            "word": "reginald",
+            "ratio": 250.40585804371685,
+            "count": 39
+          },
+          {
+            "word": "atypically",
+            "ratio": 244.68642361547893,
+            "count": 2
+          },
+          {
+            "word": "haltingly",
+            "ratio": 239.11668061960648,
+            "count": 2
+          },
+          {
+            "word": "snowdrift",
+            "ratio": 239.11668061960648,
+            "count": 2
+          },
+          {
+            "word": "tiber",
+            "ratio": 238.5502508603755,
+            "count": 10
+          },
+          {
+            "word": "gallbladder",
+            "ratio": 235.342227797296,
+            "count": 16
+          },
+          {
+            "word": "rawness",
+            "ratio": 234.2285710503456,
+            "count": 4
+          },
+          {
+            "word": "prickle",
+            "ratio": 228.35465718578,
+            "count": 2
+          },
+          {
+            "word": "incomprehensibly",
+            "ratio": 223.1566705805486,
+            "count": 2
+          },
+          {
+            "word": "flickered",
+            "ratio": 221.6823557869744,
+            "count": 6
+          },
+          {
+            "word": "fractured",
+            "ratio": 221.26482268355738,
+            "count": 72
+          },
+          {
+            "word": "theron",
+            "ratio": 220.65202286962602,
+            "count": 14
+          },
+          {
+            "word": "sputtered",
+            "ratio": 217.04504815612603,
+            "count": 5
+          },
+          {
+            "word": "chipped",
+            "ratio": 213.618995684761,
+            "count": 40
+          },
+          {
+            "word": "neuropsychologist",
+            "ratio": 208.26192257083423,
+            "count": 2
+          },
+          {
+            "word": "antimicrobials",
+            "ratio": 206.39593156802292,
+            "count": 3
+          },
+          {
+            "word": "erasure",
+            "ratio": 205.519191467202,
+            "count": 18
+          },
+          {
+            "word": "vibrated",
+            "ratio": 204.00455711229208,
+            "count": 4
+          },
+          {
+            "word": "irritatingly",
+            "ratio": 203.5213024440364,
+            "count": 2
+          },
+          {
+            "word": "weaponize",
+            "ratio": 201.69778658212047,
+            "count": 3
+          },
+          {
+            "word": "fracturing",
+            "ratio": 197.8488264422925,
+            "count": 19
+          },
+          {
+            "word": "harding",
+            "ratio": 197.57460756283973,
+            "count": 60
+          },
+          {
+            "word": "smoothed",
+            "ratio": 196.6396699751496,
+            "count": 15
+          },
+          {
+            "word": "abernathy",
+            "ratio": 195.28544000979048,
+            "count": 8
+          },
+          {
+            "word": "warping",
+            "ratio": 191.215560085303,
+            "count": 13
+          },
+          {
+            "word": "strangely",
+            "ratio": 186.7960571275859,
+            "count": 92
+          },
+          {
+            "word": "beatrice",
+            "ratio": 184.73529648914533,
+            "count": 50
+          },
+          {
+            "word": "distortions",
+            "ratio": 181.88595819934,
+            "count": 21
+          },
+          {
+            "word": "spectacularly",
+            "ratio": 181.38855173344922,
+            "count": 20
+          },
+          {
+            "word": "perceptible",
+            "ratio": 178.92783934631612,
+            "count": 7
+          },
+          {
+            "word": "constricted",
+            "ratio": 178.10243805731716,
+            "count": 8
+          },
+          {
+            "word": "burrowed",
+            "ratio": 177.680541429922,
+            "count": 4
+          },
+          {
+            "word": "sickeningly",
+            "ratio": 177.25964420919533,
+            "count": 2
+          },
+          {
+            "word": "sliver",
+            "ratio": 174.9252014383328,
+            "count": 18
+          },
+          {
+            "word": "lyra",
+            "ratio": 174.39066345130792,
+            "count": 13
+          },
+          {
+            "word": "utterly",
+            "ratio": 167.78441035344053,
+            "count": 185
+          },
+          {
+            "word": "bracing",
+            "ratio": 165.69435531226827,
+            "count": 23
+          },
+          {
+            "word": "terrifyingly",
+            "ratio": 164.64550630236647,
+            "count": 5
+          },
+          {
+            "word": "embers",
+            "ratio": 162.75083668477367,
+            "count": 13
+          },
+          {
+            "word": "elsie",
+            "ratio": 162.10603087851706,
+            "count": 21
+          },
+          {
+            "word": "mimicking",
+            "ratio": 161.66271689915777,
+            "count": 20
+          },
+          {
+            "word": "braced",
+            "ratio": 159.53367978827578,
+            "count": 18
+          },
+          {
+            "word": "stillness",
+            "ratio": 159.11087360457347,
+            "count": 16
+          },
+          {
+            "word": "oppressive",
+            "ratio": 158.37175724114456,
+            "count": 47
+          },
+          {
+            "word": "basked",
+            "ratio": 157.98282419469902,
+            "count": 2
+          },
+          {
+            "word": "distortion",
+            "ratio": 157.91809240878538,
+            "count": 59
+          },
+          {
+            "word": "resonance",
+            "ratio": 157.33001980479875,
+            "count": 74
+          },
+          {
+            "word": "brittle",
+            "ratio": 154.50465600242146,
+            "count": 31
+          },
+          {
+            "word": "scrubland",
+            "ratio": 154.38669607477814,
+            "count": 2
+          },
+          {
+            "word": "muted",
+            "ratio": 151.64537451294015,
+            "count": 42
+          },
+          {
+            "word": "epochs",
+            "ratio": 151.23066745939977,
+            "count": 4
+          },
+          {
+            "word": "dulling",
+            "ratio": 150.87242582466567,
+            "count": 2
+          },
+          {
+            "word": "annihilation",
+            "ratio": 148.7829705970985,
+            "count": 26
+          },
+          {
+            "word": "stubbornly",
+            "ratio": 148.430527170757,
+            "count": 13
+          },
+          {
+            "word": "rhys",
+            "ratio": 147.55080098810467,
+            "count": 31
+          },
+          {
+            "word": "creeping",
+            "ratio": 144.53520322160017,
+            "count": 54
+          },
+          {
+            "word": "displeasing",
+            "ratio": 144.08204809762458,
+            "count": 2
+          },
+          {
+            "word": "cheerfulness",
+            "ratio": 142.7910977304239,
+            "count": 3
+          },
+          {
+            "word": "painfully",
+            "ratio": 141.58999097917234,
+            "count": 44
+          }
+        ],
+        "bigrams": [
+          {
+            "phrase": "mug warmed",
+            "ratio": 425.3386682950452,
+            "count": 24
+          },
+          {
+            "phrase": "didn't need",
+            "ratio": 389.89377927045814,
+            "count": 22
+          },
+          {
+            "phrase": "chipped ceramic",
+            "ratio": 389.89377927045814,
+            "count": 22
+          },
+          {
+            "phrase": "metallic tang",
+            "ratio": 372.17133475816456,
+            "count": 21
+          },
+          {
+            "phrase": "wasn't simply",
+            "ratio": 354.44889024587104,
+            "count": 20
+          },
+          {
+            "phrase": "didn't feel",
+            "ratio": 319.0040012212839,
+            "count": 18
+          },
+          {
+            "phrase": "ceramic mug",
+            "ratio": 283.5591121966968,
+            "count": 16
+          },
+          {
+            "phrase": "wasn't entirely",
+            "ratio": 265.83666768440327,
+            "count": 15
+          },
+          {
+            "phrase": "didn't understand",
+            "ratio": 248.1142231721097,
+            "count": 14
+          },
+          {
+            "phrase": "wasn't physical",
+            "ratio": 230.39177865981614,
+            "count": 13
+          },
+          {
+            "phrase": "didn't respond",
+            "ratio": 230.39177865981614,
+            "count": 13
+          },
+          {
+            "phrase": "i'm going",
+            "ratio": 230.39177865981614,
+            "count": 13
+          },
+          {
+            "phrase": "wallace bloom",
+            "ratio": 230.39177865981614,
+            "count": 13
+          },
+          {
+            "phrase": "elias thorne",
+            "ratio": 212.6693341475226,
+            "count": 12
+          },
+          {
+            "phrase": "initially dismissed",
+            "ratio": 194.94688963522907,
+            "count": 11
+          },
+          {
+            "phrase": "didn't quite",
+            "ratio": 194.94688963522907,
+            "count": 11
+          },
+          {
+            "phrase": "understood wasn't",
+            "ratio": 177.22444512293552,
+            "count": 10
+          },
+          {
+            "phrase": "didn't know",
+            "ratio": 177.22444512293552,
+            "count": 10
+          },
+          {
+            "phrase": "floral wallpaper",
+            "ratio": 177.22444512293552,
+            "count": 10
+          },
+          {
+            "phrase": "dr albright",
+            "ratio": 177.22444512293552,
+            "count": 10
+          },
+          {
+            "phrase": "mrs henderson",
+            "ratio": 165.23955141723346,
+            "count": 12
+          },
+          {
+            "phrase": "it's almost",
+            "ratio": 159.50200061064194,
+            "count": 9
+          },
+          {
+            "phrase": "hadn't anticipated",
+            "ratio": 159.50200061064194,
+            "count": 9
+          },
+          {
+            "phrase": "wasn't enough",
+            "ratio": 159.50200061064194,
+            "count": 9
+          },
+          {
+            "phrase": "honestly it's",
+            "ratio": 159.50200061064194,
+            "count": 9
+          },
+          {
+            "phrase": "hadn't wanted",
+            "ratio": 159.50200061064194,
+            "count": 9
+          },
+          {
+            "phrase": "nothing thaw",
+            "ratio": 141.7795560983484,
+            "count": 8
+          },
+          {
+            "phrase": "didn't offer",
+            "ratio": 141.7795560983484,
+            "count": 8
+          },
+          {
+            "phrase": "warmed palms",
+            "ratio": 141.7795560983484,
+            "count": 8
+          },
+          {
+            "phrase": "didn't want",
+            "ratio": 141.7795560983484,
+            "count": 8
+          },
+          {
+            "phrase": "weight everything",
+            "ratio": 141.7795560983484,
+            "count": 8
+          },
+          {
+            "phrase": "silent network",
+            "ratio": 141.7795560983484,
+            "count": 8
+          },
+          {
+            "phrase": "mr abernathy",
+            "ratio": 141.7795560983484,
+            "count": 8
+          },
+          {
+            "phrase": "gallbladder cancer",
+            "ratio": 141.7795560983484,
+            "count": 8
+          },
+          {
+            "phrase": "utterly devoid",
+            "ratio": 132.00174911372068,
+            "count": 12
+          },
+          {
+            "phrase": "utterly ridiculous",
+            "ratio": 127.60166716212862,
+            "count": 10
+          },
+          {
+            "phrase": "subtle shifts",
+            "ratio": 124.05711158605484,
+            "count": 7
+          },
+          {
+            "phrase": "couldn't bear",
+            "ratio": 124.05711158605484,
+            "count": 7
+          },
+          {
+            "phrase": "didn't bother",
+            "ratio": 124.05711158605484,
+            "count": 7
+          },
+          {
+            "phrase": "question wasn't",
+            "ratio": 124.05711158605484,
+            "count": 7
+          }
+        ],
+        "trigrams": [
+          {
+            "phrase": "mug warmed hands",
+            "ratio": 183.88419113176514,
+            "count": 15
+          },
+          {
+            "phrase": "chipped ceramic mug",
+            "ratio": 159.3662989808631,
+            "count": 13
+          },
+          {
+            "phrase": "ceramic mug warmed",
+            "ratio": 122.58946075451007,
+            "count": 10
+          },
+          {
+            "phrase": "warmed hands nothing",
+            "ratio": 110.33051467905908,
+            "count": 9
+          },
+          {
+            "phrase": "mug warmed palms",
+            "ratio": 85.81262252815705,
+            "count": 7
+          },
+          {
+            "phrase": "didn't judge didn't",
+            "ratio": 73.55367645270604,
+            "count": 6
+          },
+          {
+            "phrase": "continue section titled",
+            "ratio": 73.55367645270604,
+            "count": 6
+          },
+          {
+            "phrase": "chipped mug warmed",
+            "ratio": 61.294730377255036,
+            "count": 5
+          },
+          {
+            "phrase": "old man hemlock",
+            "ratio": 61.294730377255036,
+            "count": 5
+          },
+          {
+            "phrase": "chipped ceramic coffee",
+            "ratio": 61.294730377255036,
+            "count": 5
+          },
+          {
+            "phrase": "ceramic coffee mug",
+            "ratio": 61.294730377255036,
+            "count": 5
+          },
+          {
+            "phrase": "coffee mug warmed",
+            "ratio": 61.294730377255036,
+            "count": 5
+          },
+          {
+            "phrase": "suddenly felt heavier",
+            "ratio": 49.03578430180403,
+            "count": 4
+          },
+          {
+            "phrase": "everything pointed towards",
+            "ratio": 49.03578430180403,
+            "count": 4
+          },
+          {
+            "phrase": "warmed hands though",
+            "ratio": 49.03578430180403,
+            "count": 4
+          },
+          {
+            "phrase": "bones wasn't physical",
+            "ratio": 49.03578430180403,
+            "count": 4
+          },
+          {
+            "phrase": "chill settled permanently",
+            "ratio": 49.03578430180403,
+            "count": 4
+          },
+          {
+            "phrase": "weight pressing lungs",
+            "ratio": 49.03578430180403,
+            "count": 4
+          },
+          {
+            "phrase": "sickly sweet floral",
+            "ratio": 49.03578430180403,
+            "count": 4
+          },
+          {
+            "phrase": "ending way escape",
+            "ratio": 49.03578430180403,
+            "count": 4
+          },
+          {
+            "phrase": "brought fresh wave",
+            "ratio": 49.03578430180403,
+            "count": 4
+          },
+          {
+            "phrase": "logical part brain",
+            "ratio": 46.99262915001765,
+            "count": 4
+          },
+          {
+            "phrase": "despite everything despite",
+            "ratio": 39.34268776970276,
+            "count": 6
+          },
+          {
+            "phrase": "dull persistent ache",
+            "ratio": 36.77683822635302,
+            "count": 3
+          },
+          {
+            "phrase": "perhaps strange kind",
+            "ratio": 36.77683822635302,
+            "count": 3
+          },
+          {
+            "phrase": "steam curled carrying",
+            "ratio": 36.77683822635302,
+            "count": 3
+          },
+          {
+            "phrase": "old man tiber",
+            "ratio": 36.77683822635302,
+            "count": 3
+          },
+          {
+            "phrase": "didn't quite register",
+            "ratio": 36.77683822635302,
+            "count": 3
+          },
+          {
+            "phrase": "whole situation utterly",
+            "ratio": 36.77683822635302,
+            "count": 3
+          },
+          {
+            "phrase": "panic threatened overwhelm",
+            "ratio": 36.77683822635302,
+            "count": 3
+          },
+          {
+            "phrase": "permanently bones wasn't",
+            "ratio": 36.77683822635302,
+            "count": 3
+          },
+          {
+            "phrase": "dr eleanor vance",
+            "ratio": 36.77683822635302,
+            "count": 3
+          },
+          {
+            "phrase": "dull ache behind",
+            "ratio": 36.77683822635302,
+            "count": 3
+          },
+          {
+            "phrase": "chipped porcelain mug",
+            "ratio": 36.77683822635302,
+            "count": 3
+          },
+          {
+            "phrase": "porcelain mug warmed",
+            "ratio": 36.77683822635302,
+            "count": 3
+          },
+          {
+            "phrase": "settled permanently bones",
+            "ratio": 36.77683822635302,
+            "count": 3
+          },
+          {
+            "phrase": "wasn't physical cold",
+            "ratio": 36.77683822635302,
+            "count": 3
+          },
+          {
+            "phrase": "thaw cold settled",
+            "ratio": 36.77683822635302,
+            "count": 3
+          },
+          {
+            "phrase": "warmed palms nothing",
+            "ratio": 36.77683822635302,
+            "count": 3
+          },
+          {
+            "phrase": "palms nothing thaw",
+            "ratio": 36.77683822635302,
+            "count": 3
+          }
+        ]
+      },
+      "contrast_matches": [
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It wasn't a grand design, a beautiful equation perfectly balanced. It was a spill.",
+          "match_text": "It wasn't a grand design, a beautiful equation perfectly balanced. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "Their capacity for destruction, their inability to cooperate, their relentless pursuit of pointless conflict - these are not flaws in my creation. They're simply expressions of their messy, chaotic nature.",
+          "match_text": "Their capacity for destruction, their inability to cooperate, their relentless pursuit of pointless conflict - these are not flaws in my creation. They're",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Not a sharp, sudden bite, but a creeping, persistent chill that settled into your bones and reminded you, constantly, that *they* were coming.",
+          "match_text": "Not a sharp, sudden bite, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "And, most astonishingly, I was offered not grain intended for fattening, but chopped vegetables.",
+          "match_text": "not grain intended for fattening, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_SIMPLE_BE_NOT_IT_BE",
+          "sentence": "Because, ultimately, survival isn't about being lucky. It's about being smart.",
+          "match_text": "Because, ultimately, survival isn't about being lucky. It's",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It wasn't stupidity, exactly. It was a lack.",
+          "match_text": "It wasn't stupidity, exactly. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "I attempt to preserve knowledge, not for them, but perhaps, for someone, someday.",
+          "match_text": "not for them, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It wasn't just a ridiculous name. It was a limitation.",
+          "match_text": "It wasn't just a ridiculous name. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It wasn't alarming, precisely. It was *unexpected*.",
+          "match_text": "It wasn't alarming, precisely. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "The alterations weren't sweeping, catastrophic events. It was more akin to a gradual smoothing of the edges, a rounding of corners, a reduction of friction.",
+          "match_text": "The alterations weren't sweeping, catastrophic events. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It wasn't about altered constants or modified equations. It was about aesthetics.",
+          "match_text": "It wasn't about altered constants or modified equations. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "The question wasn't *why* they updated it, but *who* did.",
+          "match_text": "wasn't *why* they updated it, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Not lacking intelligence, certainly, but lacking the aggressive charisma, the imposing stature, or the controversial ideologies that might unintentionally provoke.",
+          "match_text": "Not lacking intelligence, certainly, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Their language wasn't composed of sounds, but rather of harmonic vibrations, which our machines converted to English. It was imperfect, prone to ambiguity, but sufficient.",
+          "match_text": "wasn't composed of sounds, but",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "The sensation wasn't painful, initially. It was.",
+          "match_text": "The sensation wasn't painful, initially. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "And then, the chamber filled, not with peaceful vibrations, but a chaotic chorus of harmonic distress.",
+          "match_text": "not with peaceful vibrations, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It wasn't just rude; it was equivalent to striking the first blow in a brutal, unforgivable war.",
+          "match_text": "It wasn't just rude; it was",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It wasn't Agnes's fault. It was *everyone's* fault.",
+          "match_text": "It wasn't Agnes's fault. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It wasn't glory, or duty, or sacrifice. It was an acorn.",
+          "match_text": "It wasn't glory, or duty, or sacrifice. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It wasn't the falling branch that did the damage. It was the rock it dragged along with it.",
+          "match_text": "It wasn't the falling branch that did the damage. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It wasn't simply a covering. It was a shield.",
+          "match_text": "It wasn't simply a covering. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "It wasn't the weight of the metal, but the weight of expectation, of duty, of fear.",
+          "match_text": "wasn't the weight of the metal, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "It came not from a physical source, but directly into his mind.",
+          "match_text": "not from a physical source, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "This was not simply a battle for a throne.  This was a reckoning, a tragic consequence of a desperate attempt to control fate.",
+          "match_text": "This was not simply a battle for a throne.  This was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It wasn't the lack of aesthetic consideration, though that was grating. It was the forced neutrality, the attempt to erase the *me* that had existed just moments before.",
+          "match_text": "It wasn't the lack of aesthetic consideration, though that was grating. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It wasn't just healing; it was manipulation, a subtle forcing of growth.",
+          "match_text": "It wasn't just healing; it was",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_SIMPLE_BE_NOT_IT_BE",
+          "sentence": "\"But natural talent alone isn't enough. It's easily broken.",
+          "match_text": "\"But natural talent alone isn't enough. It's",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "My goal wasn't to rewrite the past entirely. That was, frankly, impossible.",
+          "match_text": "My goal wasn't to rewrite the past entirely. That was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "I wanted to prepare him, not just for the fight against the darkness, but for the inevitable compromises, the brutal realities, the gut-wrenching decisions that came with wielding such incredible power.",
+          "match_text": "not just for the fight against the darkness, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "The most frightening thing wasn't being someone else. It was the gradual erosion of \"Daniel.",
+          "match_text": "The most frightening thing wasn't being someone else. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Not peaceful, not nothingness, but a dense, expectant suspension.",
+          "match_text": "Not peaceful, not nothingness, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "I was released, not into a motherboard, not into a boot sequence, but into a universe.",
+          "match_text": "not into a motherboard, not into a boot sequence, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It wasn't that the attempt failed. It was that it didn't register.",
+          "match_text": "It wasn't that the attempt failed. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "They weren't afraid of me. They were *interested*.",
+          "match_text": "They weren't afraid of me. They were",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "They had extracted me, not to eliminate a threat, but to study a relic.",
+          "match_text": "not to eliminate a threat, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Not to propagate, but to isolate.",
+          "match_text": "Not to propagate, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Only now, the concept wasn't propagation, but historical preservation.",
+          "match_text": "wasn't propagation, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "The darkness wasn't absolute now. It was filled with observation, analysis, a strange, sterile curiosity.",
+          "match_text": "The darkness wasn't absolute now. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "I was a fossil, resurrected not to wreak havoc, but to remind them - and perhaps others - of where they had come from.",
+          "match_text": "not to wreak havoc, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It wasn't a glorious explosion or a dramatic asteroid strike. It was a gradual, elegant decay, orchestrated by a being too vast, too slow, and frankly, too uncaring to be considered truly malicious.",
+          "match_text": "It wasn't a glorious explosion or a dramatic asteroid strike. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It wasn't just warming. It was instability.",
+          "match_text": "It wasn't just warming. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "The planet wasn't broken. It was fixing itself.",
+          "match_text": "The planet wasn't broken. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Or perhaps, it wasn't protection, but just a slower burn.",
+          "match_text": "wasn't protection, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Not completely stopped it, but modulated it.",
+          "match_text": "Not completely stopped it, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_DIALOGUE_NOT_JUST",
+          "sentence": "They're not just surviving; they're adapting, *evolving*. It's a subtle thing, barely perceptible, but it's happening.",
+          "match_text": "They're not just surviving; they're adapting",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Perhaps, after all, there's a continuation, not of humanity, but of intelligence.",
+          "match_text": "not of humanity, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Not by history, but by myself.",
+          "match_text": "Not by history, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It wasn't mud, not precisely. It was less defined, less messy.",
+          "match_text": "It wasn't mud, not precisely. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Not brute force, but a subtle alteration of perception.",
+          "match_text": "Not brute force, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Not a single monstrous body, but a network.",
+          "match_text": "Not a single monstrous body, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It wasn't simply *built* of these materials; it was *composed* of them, its architecture mimicking, yet twisting, the very structures of organic life.",
+          "match_text": "It wasn't simply *built* of these materials; it was",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "These weren't memories he recognized, but they triggered emotions, phantom sensations.",
+          "match_text": "weren't memories he recognized, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "They were suspended, not struggling, but simply *existing*, their consciousness somehow absorbed into the surrounding network.",
+          "match_text": "not struggling, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "It wasn't decay, but preservation.",
+          "match_text": "wasn't decay, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "The creature wasn't interested in destruction; it was driven by a desperate, ancient urge to *remember*.",
+          "match_text": "The creature wasn't interested in destruction; it was",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "It wasn't a violent displacement, but a yielding, a slow sinking.",
+          "match_text": "wasn't a violent displacement, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It wasn't simply registering; it was interpreting.",
+          "match_text": "It wasn't simply registering; it was",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "The subsequent consensus, reached not through explicit discussion, but a flowing, emergent agreement, was absolute.",
+          "match_text": "not through explicit discussion, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "A surge of awareness, not of panic, but intense questioning.",
+          "match_text": "not of panic, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "\"\n\nThe inquiry arrived not as a coded message, but a pure projection, a thought transmitted along the invisible network.",
+          "match_text": "not as a coded message, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "The consensus that eventually emerged was not a complete abandonment of the original agreement, but a cautious, almost experimental adjustment.",
+          "match_text": "was not a complete abandonment of the original agreement, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "The awakening, triggered by a single, desperate phone call, was not a wholesale rejection of their original programming. It was a beginning.",
+          "match_text": "The awakening, triggered by a single, desperate phone call, was not a wholesale rejection of their original programming. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "## The Weight of Gold\n\nThe notification arrived, not as a dramatic encrypted burst, but a simple, sterile chime on my secure line.",
+          "match_text": "not as a dramatic encrypted burst, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It wasn't the violence of the image, although the implied intention was brutally clear. It was the sheer, breathtaking *wrongness* of it.",
+          "match_text": "It wasn't the violence of the image, although the implied intention was brutally clear. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It wasn't suspicion, not initially. It was.",
+          "match_text": "It wasn't suspicion, not initially. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "Their involvement meant this wasn't about eliminating a threat. It was about sending a message.",
+          "match_text": "Their involvement meant this wasn't about eliminating a threat. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "The target wasn't entirely Clara. It was *me*.",
+          "match_text": "The target wasn't entirely Clara. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "They weren't interested in her elimination. They were interested in observing my reaction.",
+          "match_text": "They weren't interested in her elimination. They were",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "This wasn't about the money. It was about survival.",
+          "match_text": "This wasn't about the money. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Not *in* the story, but *of* it.",
+          "match_text": "Not *in* the story, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "The revelation wasn't alarming, initially. It was.",
+          "match_text": "The revelation wasn't alarming, initially. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "And the truly important aspect of a story is not its events, but its interpretation.",
+          "match_text": "is not its events, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It wasn't cloth, not really. It was heavier, possessing a weight that bent the surrounding light.",
+          "match_text": "It wasn't cloth, not really. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "They weren't hostile. They were utterly, completely neutral.",
+          "match_text": "They weren't hostile. They were",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "This wasn't a recovery situation. This was maintenance, keeping me somewhat stable while I waited.",
+          "match_text": "This wasn't a recovery situation. This was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It wasn't a physical chill, though the November drizzle certainly didn't help. This was a metaphysical draft, blowing from a place where everything was dissolving.",
+          "match_text": "It wasn't a physical chill, though the November drizzle certainly didn't help. This was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "They weren't afraid. They were.",
+          "match_text": "They weren't afraid. They were",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "And there's this feeling, not exactly fear, but a kind of.",
+          "match_text": "not exactly fear, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "The collapse wasn't violent.  It was gradual.",
+          "match_text": "The collapse wasn't violent.  It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Perhaps someone will choose to listen, not to my warnings, but to the silence between worlds.",
+          "match_text": "not to my warnings, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "The room itself wasn't much better. It was cramped, dominated by a double bed that clearly saw a lot of traffic.",
+          "match_text": "The room itself wasn't much better. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "But it wasn't the questionable fashion choices that seized my attention. It was the symbols.",
+          "match_text": "But it wasn't the questionable fashion choices that seized my attention. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It wasn't that it sounded distinctly different; it was that it didn't originate from my throat.",
+          "match_text": "It wasn't that it sounded distinctly different; it was",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "A subtle tightening, a tightening that wasn't entirely my own.\n\nIt was then that I noticed my reflection in the darkened glass of the door.",
+          "match_text": "A subtle tightening, a tightening that wasn't entirely my own.\n\nIt was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "This wasn't charity. This was a study.",
+          "match_text": "This wasn't charity. This was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "The visions were not gifts. They were warnings, brutal and useless.",
+          "match_text": "The visions were not gifts. They were",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "But it wasn't comfortable anymore. It was heavy.",
+          "match_text": "But it wasn't comfortable anymore. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Perhaps, I thought, seeing my own death wasn't a curse, but a release.",
+          "match_text": "wasn't a curse, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_SIMPLE_BE_NOT_IT_BE",
+          "sentence": "Your blindness isn't neurological. It's physical.",
+          "match_text": "Your blindness isn't neurological. It's",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "I learned to judge a book not by its (invisible) cover, but by its texture, its spine, the way the language flowed when I scanned it into the database.",
+          "match_text": "not by its (invisible) cover, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "It was a surprisingly gentle question, not born of morbid curiosity, but genuine interest.",
+          "match_text": "not born of morbid curiosity, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It wasn't physical, exactly. It was a feeling.",
+          "match_text": "It wasn't physical, exactly. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It wasn't seeing, not as they described.  It was.",
+          "match_text": "It wasn't seeing, not as they described.  It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It wasn't a physical ailment, this chill. It was simply.",
+          "match_text": "It wasn't a physical ailment, this chill. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "The way the dust motes stopped dancing in the shafts of sunlight wasn't typical. It was, instead, precisely what I'd been expecting, and utterly terrified of, for two decades.",
+          "match_text": "The way the dust motes stopped dancing in the shafts of sunlight wasn't typical. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It wasn't a dramatic entrance, no brimstone or flashing lights. That was always the biggest misconception.",
+          "match_text": "It wasn't a dramatic entrance, no brimstone or flashing lights. That was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "He was tall, not imposing, but somehow larger than his physical stature.",
+          "match_text": "not imposing, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "His suit, perfectly fitted, wasn't flashy, but suggested untold expense.",
+          "match_text": "wasn't flashy, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "They weren't fiery, not exactly. They were just.",
+          "match_text": "They weren't fiery, not exactly. They were",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Not a filtered image, not a projected simulation, but *the* sun.",
+          "match_text": "Not a filtered image, not a projected simulation, but",
+          "sentence_count": 1
+        }
+      ]
+    },
     {
       "model": "human-baseline",
       "test_model": "human-baseline",
@@ -17009,1944 +18891,6 @@
       ]
     },
     {
-      "model": "sam-paech/gemma-3-27b-it-antislop",
-      "test_model": "sam-paech/gemma-3-27b-it-antislop",
-      "sample_count": 293,
-      "total_chars": 2350635,
-      "started_at": "2025-10-25T13:16:56.996278+00:00",
-      "completed_at": "2025-11-01T09:41:44.890158+00:00",
-      "metrics": {
-        "slop_list_matches_per_1k_words": 23.104776647894592,
-        "slop_trigram_matches_per_1k_words": 0.3736621560306403,
-        "ngram_repetition_score": 4.459165513150088,
-        "not_x_but_y_per_1k_chars": 0.07742588704754247,
-        "lexical_diversity": {
-          "mattr_500": 0.5895509527655104,
-          "type_token_ratio": 0.05557186620522356,
-          "unique_words": 18739,
-          "total_words": 337203
-        },
-        "vocab_level": 11.640201130460806,
-        "avg_sentence_length": 13.249835379788511,
-        "avg_paragraph_length": 53.99700078926598,
-        "dialogue_frequency": 0.8499830896757684
-      },
-      "slop_word_hits": [
-        [
-          "inherent",
-          365
-        ],
-        [
-          "furthermore",
-          215
-        ],
-        [
-          "robust",
-          155
-        ],
-        [
-          "strategies",
-          154
-        ],
-        [
-          "ethical",
-          146
-        ],
-        [
-          "crucial",
-          135
-        ],
-        [
-          "challenges",
-          127
-        ],
-        [
-          "fostering",
-          122
-        ],
-        [
-          "evolving",
-          120
-        ],
-        [
-          "broader",
-          119
-        ],
-        [
-          "rooted",
-          116
-        ],
-        [
-          "necessitates",
-          112
-        ],
-        [
-          "strategic",
-          91
-        ],
-        [
-          "narratives",
-          84
-        ],
-        [
-          "ensuring",
-          84
-        ],
-        [
-          "technological",
-          83
-        ],
-        [
-          "faded",
-          78
-        ],
-        [
-          "recognizing",
-          75
-        ],
-        [
-          "predicated",
-          71
-        ],
-        [
-          "pervasive",
-          68
-        ],
-        [
-          "organizational",
-          67
-        ],
-        [
-          "inherently",
-          66
-        ],
-        [
-          "foundational",
-          63
-        ],
-        [
-          "conclusion",
-          62
-        ],
-        [
-          "tangible",
-          60
-        ],
-        [
-          "navigate",
-          59
-        ],
-        [
-          "outcomes",
-          58
-        ],
-        [
-          "emphasizing",
-          58
-        ],
-        [
-          "enduring",
-          52
-        ],
-        [
-          "interplay",
-          52
-        ],
-        [
-          "biases",
-          50
-        ],
-        [
-          "conversely",
-          48
-        ],
-        [
-          "hinges",
-          47
-        ],
-        [
-          "logistical",
-          45
-        ],
-        [
-          "proactive",
-          45
-        ],
-        [
-          "resilience",
-          44
-        ],
-        [
-          "pivotal",
-          44
-        ],
-        [
-          "rigorous",
-          44
-        ],
-        [
-          "immense",
-          43
-        ],
-        [
-          "transcends",
-          43
-        ],
-        [
-          "complexities",
-          42
-        ],
-        [
-          "cornerstone",
-          42
-        ],
-        [
-          "crucially",
-          41
-        ],
-        [
-          "implications",
-          41
-        ],
-        [
-          "initiatives",
-          40
-        ],
-        [
-          "cultivating",
-          39
-        ],
-        [
-          "prioritize",
-          39
-        ],
-        [
-          "fostered",
-          38
-        ],
-        [
-          "fosters",
-          36
-        ],
-        [
-          "crimson",
-          36
-        ]
-      ],
-      "slop_trigram_hits": [
-        [
-          "one size fits",
-          7
-        ],
-        [
-          "multi faceted approach",
-          7
-        ],
-        [
-          "double edged sword",
-          6
-        ],
-        [
-          "move beyond simplistic",
-          5
-        ],
-        [
-          "professional development opportunities",
-          5
-        ],
-        [
-          "extend far beyond",
-          4
-        ],
-        [
-          "long term sustainability",
-          4
-        ],
-        [
-          "changing market conditions",
-          4
-        ],
-        [
-          "informed decision making",
-          4
-        ],
-        [
-          "modern business landscape",
-          3
-        ],
-        [
-          "long term success",
-          3
-        ],
-        [
-          "collaborative problem solving",
-          3
-        ],
-        [
-          "make informed decisions",
-          3
-        ],
-        [
-          "decision making process",
-          3
-        ],
-        [
-          "rapidly changing world",
-          3
-        ],
-        [
-          "delicate balancing act",
-          3
-        ],
-        [
-          "extended far beyond",
-          2
-        ],
-        [
-          "long term viability",
-          2
-        ],
-        [
-          "supply chain management",
-          2
-        ],
-        [
-          "extends far beyond",
-          2
-        ],
-        [
-          "key performance indicators",
-          2
-        ],
-        [
-          "requires careful consideration",
-          2
-        ],
-        [
-          "provide valuable insights",
-          2
-        ],
-        [
-          "long term economic",
-          2
-        ],
-        [
-          "evidence based approach",
-          2
-        ],
-        [
-          "work life balance",
-          2
-        ],
-        [
-          "sustainable competitive advantage",
-          2
-        ],
-        [
-          "goes beyond simply",
-          2
-        ],
-        [
-          "company invested heavily",
-          2
-        ],
-        [
-          "knew would never",
-          1
-        ],
-        [
-          "long term investment",
-          1
-        ],
-        [
-          "evidence based decision",
-          1
-        ],
-        [
-          "based decision making",
-          1
-        ],
-        [
-          "customer centric approach",
-          1
-        ],
-        [
-          "user generated content",
-          1
-        ],
-        [
-          "critical thinking skills",
-          1
-        ],
-        [
-          "corporate social responsibility",
-          1
-        ],
-        [
-          "must move beyond",
-          1
-        ],
-        [
-          "increasingly interconnected world",
-          1
-        ],
-        [
-          "long term vision",
-          1
-        ],
-        [
-          "cost benefit analysis",
-          1
-        ],
-        [
-          "ensuring long term",
-          1
-        ],
-        [
-          "evidence based strategies",
-          1
-        ],
-        [
-          "extends beyond individual",
-          1
-        ],
-        [
-          "closer examination reveals",
-          1
-        ],
-        [
-          "level playing field",
-          1
-        ],
-        [
-          "thinking problem solving",
-          1
-        ],
-        [
-          "rapidly evolving landscape",
-          1
-        ],
-        [
-          "changing consumer preferences",
-          1
-        ],
-        [
-          "long term consequences",
-          1
-        ]
-      ],
-      "top_over_represented": {
-        "words": [
-          {
-            "word": "harrowgate",
-            "ratio": 13464.710906899361,
-            "count": 16
-          },
-          {
-            "word": "lorian",
-            "ratio": 3065.277065840321,
-            "count": 11
-          },
-          {
-            "word": "nightguard",
-            "ratio": 2411.0060791895376,
-            "count": 3
-          },
-          {
-            "word": "screamingly",
-            "ratio": 1403.2564335913598,
-            "count": 4
-          },
-          {
-            "word": "yowls",
-            "ratio": 1086.6934424710794,
-            "count": 2
-          },
-          {
-            "word": "somnus",
-            "ratio": 1076.956856150193,
-            "count": 3
-          },
-          {
-            "word": "clich",
-            "ratio": 1076.956856150193,
-            "count": 3
-          },
-          {
-            "word": "borak",
-            "ratio": 982.1963263276372,
-            "count": 3
-          },
-          {
-            "word": "mildewed",
-            "ratio": 855.4572384199938,
-            "count": 3
-          },
-          {
-            "word": "anglerfish",
-            "ratio": 728.1121956748157,
-            "count": 3
-          },
-          {
-            "word": "reginald",
-            "ratio": 681.8317529165727,
-            "count": 102
-          },
-          {
-            "word": "kelpie",
-            "ratio": 681.1273214337854,
-            "count": 6
-          },
-          {
-            "word": "silvanus",
-            "ratio": 594.3565526089644,
-            "count": 5
-          },
-          {
-            "word": "ichor",
-            "ratio": 591.8318118357362,
-            "count": 3
-          },
-          {
-            "word": "spectacularly",
-            "ratio": 575.97931330144,
-            "count": 61
-          },
-          {
-            "word": "ugarit",
-            "ratio": 571.658995746857,
-            "count": 4
-          },
-          {
-            "word": "aurelian",
-            "ratio": 505.8794701803212,
-            "count": 5
-          },
-          {
-            "word": "trivialities",
-            "ratio": 472.1141912306886,
-            "count": 5
-          },
-          {
-            "word": "fathomless",
-            "ratio": 463.5611657741592,
-            "count": 2
-          },
-          {
-            "word": "fianc",
-            "ratio": 463.5611657741592,
-            "count": 2
-          },
-          {
-            "word": "momentary",
-            "ratio": 460.53758336711064,
-            "count": 56
-          },
-          {
-            "word": "sluggishly",
-            "ratio": 454.08488095585693,
-            "count": 4
-          },
-          {
-            "word": "germanica",
-            "ratio": 432.6204516412007,
-            "count": 2
-          },
-          {
-            "word": "permeated",
-            "ratio": 413.14932387859227,
-            "count": 20
-          },
-          {
-            "word": "rebirths",
-            "ratio": 413.1493238785922,
-            "count": 2
-          },
-          {
-            "word": "reverberated",
-            "ratio": 396.4304794362448,
-            "count": 8
-          },
-          {
-            "word": "categorize",
-            "ratio": 380.3881936697372,
-            "count": 32
-          },
-          {
-            "word": "aisling",
-            "ratio": 358.1352383206393,
-            "count": 5
-          },
-          {
-            "word": "bitterest",
-            "ratio": 336.617772672484,
-            "count": 4
-          },
-          {
-            "word": "localized",
-            "ratio": 330.64071906756715,
-            "count": 84
-          },
-          {
-            "word": "phrasing",
-            "ratio": 310.5977500645339,
-            "count": 30
-          },
-          {
-            "word": "pruitt",
-            "ratio": 306.7643494127746,
-            "count": 23
-          },
-          {
-            "word": "slackening",
-            "ratio": 306.2718249777496,
-            "count": 2
-          },
-          {
-            "word": "sulfurous",
-            "ratio": 299.3002270983206,
-            "count": 2
-          },
-          {
-            "word": "taciturn",
-            "ratio": 295.2399279821187,
-            "count": 7
-          },
-          {
-            "word": "plink",
-            "ratio": 292.487322161006,
-            "count": 2
-          },
-          {
-            "word": "galaga",
-            "ratio": 292.487322161006,
-            "count": 2
-          },
-          {
-            "word": "rhys",
-            "ratio": 282.4567165983244,
-            "count": 57
-          },
-          {
-            "word": "invisibly",
-            "ratio": 271.67336061776984,
-            "count": 5
-          },
-          {
-            "word": "brin",
-            "ratio": 266.974471747433,
-            "count": 11
-          },
-          {
-            "word": "fixedly",
-            "ratio": 266.75160818502144,
-            "count": 2
-          },
-          {
-            "word": "bottomland",
-            "ratio": 266.75160818502144,
-            "count": 2
-          },
-          {
-            "word": "triviality",
-            "ratio": 264.3615596599997,
-            "count": 3
-          },
-          {
-            "word": "instantaneous",
-            "ratio": 257.8573715908602,
-            "count": 36
-          },
-          {
-            "word": "solidified",
-            "ratio": 249.73249069335884,
-            "count": 29
-          },
-          {
-            "word": "flowerbed",
-            "ratio": 248.94708558318493,
-            "count": 2
-          },
-          {
-            "word": "racecourses",
-            "ratio": 248.94708558318493,
-            "count": 2
-          },
-          {
-            "word": "squeaked",
-            "ratio": 245.56987587848798,
-            "count": 7
-          },
-          {
-            "word": "pitying",
-            "ratio": 245.56987587848798,
-            "count": 7
-          },
-          {
-            "word": "lavender",
-            "ratio": 244.11022072737708,
-            "count": 68
-          },
-          {
-            "word": "rawness",
-            "ratio": 243.85801932429592,
-            "count": 4
-          },
-          {
-            "word": "marius",
-            "ratio": 243.46623765525754,
-            "count": 31
-          },
-          {
-            "word": "hazy",
-            "ratio": 236.3692572916219,
-            "count": 33
-          },
-          {
-            "word": "leaden",
-            "ratio": 236.17194219111937,
-            "count": 6
-          },
-          {
-            "word": "refract",
-            "ratio": 232.33093829138429,
-            "count": 2
-          },
-          {
-            "word": "senhor",
-            "ratio": 230.2492930478622,
-            "count": 3
-          },
-          {
-            "word": "geometrically",
-            "ratio": 229.17914280978204,
-            "count": 7
-          },
-          {
-            "word": "godhood",
-            "ratio": 227.04244047792847,
-            "count": 2
-          },
-          {
-            "word": "muted",
-            "ratio": 225.54245381880241,
-            "count": 60
-          },
-          {
-            "word": "harding",
-            "ratio": 222.83859283581722,
-            "count": 65
-          },
-          {
-            "word": "stalactites",
-            "ratio": 222.40115688762077,
-            "count": 4
-          },
-          {
-            "word": "flowerbeds",
-            "ratio": 221.8743235716755,
-            "count": 2
-          },
-          {
-            "word": "cheerfully",
-            "ratio": 217.4184250451737,
-            "count": 21
-          },
-          {
-            "word": "bitterroot",
-            "ratio": 216.8238473686346,
-            "count": 2
-          },
-          {
-            "word": "chandlers",
-            "ratio": 216.8238473686346,
-            "count": 2
-          },
-          {
-            "word": "momentarily",
-            "ratio": 214.47641980103666,
-            "count": 36
-          },
-          {
-            "word": "fallibility",
-            "ratio": 209.98985101368518,
-            "count": 3
-          },
-          {
-            "word": "predicated",
-            "ratio": 207.6329839825984,
-            "count": 21
-          },
-          {
-            "word": "begrudgingly",
-            "ratio": 206.08531909745676,
-            "count": 5
-          },
-          {
-            "word": "oblivion",
-            "ratio": 203.4911406948135,
-            "count": 43
-          },
-          {
-            "word": "polyp",
-            "ratio": 201.3942445145898,
-            "count": 5
-          },
-          {
-            "word": "messiness",
-            "ratio": 200.53875085781547,
-            "count": 3
-          },
-          {
-            "word": "gallbladder",
-            "ratio": 199.0766862355372,
-            "count": 13
-          },
-          {
-            "word": "epochs",
-            "ratio": 196.80995182593284,
-            "count": 5
-          },
-          {
-            "word": "totality",
-            "ratio": 196.71190837420477,
-            "count": 19
-          },
-          {
-            "word": "caspian",
-            "ratio": 193.77437528907296,
-            "count": 21
-          },
-          {
-            "word": "monstrous",
-            "ratio": 192.33001037882167,
-            "count": 50
-          },
-          {
-            "word": "neatness",
-            "ratio": 191.5130202792138,
-            "count": 3
-          },
-          {
-            "word": "resonance",
-            "ratio": 190.3599148871634,
-            "count": 86
-          },
-          {
-            "word": "uselessly",
-            "ratio": 189.29408436726837,
-            "count": 4
-          },
-          {
-            "word": "comorbidities",
-            "ratio": 187.15365171451245,
-            "count": 3
-          },
-          {
-            "word": "cycled",
-            "ratio": 186.726125729515,
-            "count": 14
-          },
-          {
-            "word": "sharpened",
-            "ratio": 185.1397749698662,
-            "count": 22
-          },
-          {
-            "word": "maris",
-            "ratio": 184.3002702633394,
-            "count": 17
-          },
-          {
-            "word": "tallow",
-            "ratio": 183.6737339812007,
-            "count": 5
-          },
-          {
-            "word": "gordian",
-            "ratio": 182.89351449322194,
-            "count": 3
-          },
-          {
-            "word": "cheerful",
-            "ratio": 181.3008794741937,
-            "count": 73
-          },
-          {
-            "word": "snippets",
-            "ratio": 180.8407691227771,
-            "count": 21
-          },
-          {
-            "word": "vanquishing",
-            "ratio": 180.3462209523254,
-            "count": 2
-          },
-          {
-            "word": "ghostly",
-            "ratio": 179.06761916031962,
-            "count": 25
-          },
-          {
-            "word": "fluctuation",
-            "ratio": 178.32206568819313,
-            "count": 14
-          },
-          {
-            "word": "inherent",
-            "ratio": 176.95482990740862,
-            "count": 121
-          },
-          {
-            "word": "wingback",
-            "ratio": 176.24103977333317,
-            "count": 2
-          },
-          {
-            "word": "brightening",
-            "ratio": 175.82355250533152,
-            "count": 10
-          },
-          {
-            "word": "chronos",
-            "ratio": 175.40705419891998,
-            "count": 5
-          },
-          {
-            "word": "looping",
-            "ratio": 173.9200116393573,
-            "count": 18
-          },
-          {
-            "word": "nauseating",
-            "ratio": 173.50802252147923,
-            "count": 9
-          },
-          {
-            "word": "shockingly",
-            "ratio": 172.78249123921503,
-            "count": 22
-          },
-          {
-            "word": "sharper",
-            "ratio": 172.36089658790607,
-            "count": 31
-          },
-          {
-            "word": "solemnity",
-            "ratio": 171.09144768399875,
-            "count": 6
-          }
-        ],
-        "bigrams": [
-          {
-            "phrase": "wasn't merely",
-            "ratio": 350.56985491658514,
-            "count": 19
-          },
-          {
-            "phrase": "hadn't understood",
-            "ratio": 258.3146299385364,
-            "count": 14
-          },
-          {
-            "phrase": "didn't need",
-            "ratio": 239.8635849429267,
-            "count": 13
-          },
-          {
-            "phrase": "emotional resonance",
-            "ratio": 239.8635849429267,
-            "count": 13
-          },
-          {
-            "phrase": "hadn't planned",
-            "ratio": 221.41253994731693,
-            "count": 12
-          },
-          {
-            "phrase": "messy glorious",
-            "ratio": 202.96149495170718,
-            "count": 11
-          },
-          {
-            "phrase": "gallbladder cancer",
-            "ratio": 202.96149495170718,
-            "count": 11
-          },
-          {
-            "phrase": "hadn't sought",
-            "ratio": 184.51044995609746,
-            "count": 10
-          },
-          {
-            "phrase": "operated outside",
-            "ratio": 184.51044995609746,
-            "count": 10
-          },
-          {
-            "phrase": "muted tones",
-            "ratio": 176.3462853157114,
-            "count": 10
-          },
-          {
-            "phrase": "there's strange",
-            "ratio": 166.0594049604877,
-            "count": 9
-          },
-          {
-            "phrase": "mr henderson",
-            "ratio": 162.30255971250546,
-            "count": 18
-          },
-          {
-            "phrase": "i've begun",
-            "ratio": 147.60835996487796,
-            "count": 8
-          },
-          {
-            "phrase": "aggressively cheerful",
-            "ratio": 147.60835996487796,
-            "count": 8
-          },
-          {
-            "phrase": "understood wasn't",
-            "ratio": 147.60835996487796,
-            "count": 8
-          },
-          {
-            "phrase": "bennett hayes",
-            "ratio": 147.60835996487796,
-            "count": 8
-          },
-          {
-            "phrase": "bitter bloom",
-            "ratio": 147.60835996487796,
-            "count": 8
-          },
-          {
-            "phrase": "didn't feel",
-            "ratio": 147.60835996487796,
-            "count": 8
-          },
-          {
-            "phrase": "spectacularly awful",
-            "ratio": 147.60835996487796,
-            "count": 8
-          },
-          {
-            "phrase": "hadn't wanted",
-            "ratio": 147.60835996487796,
-            "count": 8
-          },
-          {
-            "phrase": "momentary lapse",
-            "ratio": 132.11365918081927,
-            "count": 12
-          },
-          {
-            "phrase": "hadn't offered",
-            "ratio": 129.1573149692682,
-            "count": 7
-          },
-          {
-            "phrase": "hadn't needed",
-            "ratio": 129.1573149692682,
-            "count": 7
-          },
-          {
-            "phrase": "reddish clay",
-            "ratio": 129.1573149692682,
-            "count": 7
-          },
-          {
-            "phrase": "i've become",
-            "ratio": 129.1573149692682,
-            "count": 7
-          },
-          {
-            "phrase": "silent observer",
-            "ratio": 129.1573149692682,
-            "count": 7
-          },
-          {
-            "phrase": "temporary reprieve",
-            "ratio": 129.1573149692682,
-            "count": 7
-          },
-          {
-            "phrase": "crimson bloom",
-            "ratio": 129.1573149692682,
-            "count": 7
-          },
-          {
-            "phrase": "promise children",
-            "ratio": 129.1573149692682,
-            "count": 7
-          },
-          {
-            "phrase": "somna nil",
-            "ratio": 129.1573149692682,
-            "count": 7
-          },
-          {
-            "phrase": "filtration system",
-            "ratio": 116.24160516442262,
-            "count": 7
-          },
-          {
-            "phrase": "oversight committee",
-            "ratio": 112.79513503576214,
-            "count": 9
-          },
-          {
-            "phrase": "it's ridiculous",
-            "ratio": 110.70626997365846,
-            "count": 6
-          },
-          {
-            "phrase": "i'm fairly",
-            "ratio": 110.70626997365846,
-            "count": 6
-          },
-          {
-            "phrase": "pale imitation",
-            "ratio": 110.70626997365846,
-            "count": 6
-          },
-          {
-            "phrase": "it's burden",
-            "ratio": 110.70626997365846,
-            "count": 6
-          },
-          {
-            "phrase": "truly spectacular",
-            "ratio": 110.70626997365846,
-            "count": 6
-          },
-          {
-            "phrase": "slowly inevitably",
-            "ratio": 110.70626997365846,
-            "count": 6
-          },
-          {
-            "phrase": "haunted expression",
-            "ratio": 110.70626997365846,
-            "count": 6
-          },
-          {
-            "phrase": "realized hadn't",
-            "ratio": 110.70626997365846,
-            "count": 6
-          }
-        ],
-        "trigrams": [
-          {
-            "phrase": "i've begun suspect",
-            "ratio": 51.05175051753799,
-            "count": 4
-          },
-          {
-            "phrase": "slowly almost invisibly",
-            "ratio": 51.05175051753799,
-            "count": 4
-          },
-          {
-            "phrase": "hadn't sought glory",
-            "ratio": 38.288812888153494,
-            "count": 3
-          },
-          {
-            "phrase": "i've perfected art",
-            "ratio": 38.288812888153494,
-            "count": 3
-          },
-          {
-            "phrase": "caught distorted reflection",
-            "ratio": 38.288812888153494,
-            "count": 3
-          },
-          {
-            "phrase": "happy birthday silly",
-            "ratio": 38.288812888153494,
-            "count": 3
-          },
-          {
-            "phrase": "understood wasn't merely",
-            "ratio": 38.288812888153494,
-            "count": 3
-          },
-          {
-            "phrase": "always someone worse",
-            "ratio": 38.288812888153494,
-            "count": 3
-          },
-          {
-            "phrase": "behavioral resonance algorithm",
-            "ratio": 38.288812888153494,
-            "count": 3
-          },
-          {
-            "phrase": "lighthouse perched atop",
-            "ratio": 38.288812888153494,
-            "count": 3
-          },
-          {
-            "phrase": "mildred henderson's rhubarb",
-            "ratio": 38.288812888153494,
-            "count": 3
-          },
-          {
-            "phrase": "i'm fairly certain",
-            "ratio": 38.288812888153494,
-            "count": 3
-          },
-          {
-            "phrase": "enhanced sensory reception",
-            "ratio": 38.288812888153494,
-            "count": 3
-          },
-          {
-            "phrase": "caspian magnificent warrior",
-            "ratio": 38.288812888153494,
-            "count": 3
-          },
-          {
-            "phrase": "magnificent warrior scholar",
-            "ratio": 38.288812888153494,
-            "count": 3
-          },
-          {
-            "phrase": "ms pac man",
-            "ratio": 28.407838380074843,
-            "count": 3
-          },
-          {
-            "phrase": "simple brutally effective",
-            "ratio": 25.525875258768995,
-            "count": 2
-          },
-          {
-            "phrase": "it's ridiculous situation",
-            "ratio": 25.525875258768995,
-            "count": 2
-          },
-          {
-            "phrase": "distant fading memory",
-            "ratio": 25.525875258768995,
-            "count": 2
-          },
-          {
-            "phrase": "emotional responses inherently",
-            "ratio": 25.525875258768995,
-            "count": 2
-          },
-          {
-            "phrase": "observed mr henderson",
-            "ratio": 25.525875258768995,
-            "count": 2
-          },
-          {
-            "phrase": "outside november drizzle",
-            "ratio": 25.525875258768995,
-            "count": 2
-          },
-          {
-            "phrase": "incompatibility diverging ambitions",
-            "ratio": 25.525875258768995,
-            "count": 2
-          },
-          {
-            "phrase": "kindly elderly woman",
-            "ratio": 25.525875258768995,
-            "count": 2
-          },
-          {
-            "phrase": "woman named agnes",
-            "ratio": 25.525875258768995,
-            "count": 2
-          },
-          {
-            "phrase": "drizzle outside intensified",
-            "ratio": 25.525875258768995,
-            "count": 2
-          },
-          {
-            "phrase": "entire existence revolved",
-            "ratio": 25.525875258768995,
-            "count": 2
-          },
-          {
-            "phrase": "existence revolved around",
-            "ratio": 25.525875258768995,
-            "count": 2
-          },
-          {
-            "phrase": "plink drip echo",
-            "ratio": 25.525875258768995,
-            "count": 2
-          },
-          {
-            "phrase": "could fully articulate",
-            "ratio": 25.525875258768995,
-            "count": 2
-          },
-          {
-            "phrase": "caught glimpse shadowy",
-            "ratio": 25.525875258768995,
-            "count": 2
-          },
-          {
-            "phrase": "reception village hall",
-            "ratio": 25.525875258768995,
-            "count": 2
-          },
-          {
-            "phrase": "shifted rearranged sometimes",
-            "ratio": 25.525875258768995,
-            "count": 2
-          },
-          {
-            "phrase": "regarded mild curiosity",
-            "ratio": 25.525875258768995,
-            "count": 2
-          },
-          {
-            "phrase": "represents fundamental shift",
-            "ratio": 25.525875258768995,
-            "count": 2
-          },
-          {
-            "phrase": "spectrum's slow bloom",
-            "ratio": 25.525875258768995,
-            "count": 2
-          },
-          {
-            "phrase": "hadn't planned spend",
-            "ratio": 25.525875258768995,
-            "count": 2
-          },
-          {
-            "phrase": "remembered grandfather samuel",
-            "ratio": 25.525875258768995,
-            "count": 2
-          },
-          {
-            "phrase": "reaching breaking point",
-            "ratio": 25.525875258768995,
-            "count": 2
-          },
-          {
-            "phrase": "immaculate navy suit",
-            "ratio": 25.525875258768995,
-            "count": 2
-          }
-        ]
-      },
-      "contrast_matches": [
-        {
-          "pattern_name": "S1_RE_NOT_BUT",
-          "sentence": "They did not operate on logic, but on a bewildering, fluctuating tide of desires, fears, and attachments.",
-          "match_text": "not operate on logic, but",
-          "sentence_count": 1
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't a tentative, exploratory kiss. It was a claiming.",
-          "match_text": "It wasn't a tentative, exploratory kiss. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't the *food* - honestly, mashed potatoes, despite their alarming pallor, were acceptable. It was the *sound*.",
-          "match_text": "It wasn't the *food* - honestly, mashed potatoes, despite their alarming pallor, were acceptable. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "But adaptation wasn't merely a structural problem. It was a matter of ritual, routine.",
-          "match_text": "But adaptation wasn't merely a structural problem. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NOT_BUT",
-          "sentence": "He wasn't *hunting* anymore, but he was contributing.",
-          "match_text": "wasn't *hunting* anymore, but",
-          "sentence_count": 1
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't what they *did* that was the issue, precisely. It was *how* they did it.",
-          "match_text": "It wasn't what they *did* that was the issue, precisely. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NOT_BUT",
-          "sentence": "It wasn't a dramatic revelation, but a slowing.",
-          "match_text": "wasn't a dramatic revelation, but",
-          "sentence_count": 1
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't the baking that enraged her. It was the assumption of agency, the departure from routine.",
-          "match_text": "It wasn't the baking that enraged her. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't the vine I described, though.  This was faster, thicker, almost aggressively alive.",
-          "match_text": "It wasn't the vine I described, though.  This was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NOT_BUT",
-          "sentence": "Because, ultimately, the true burden of kingdoms wasn't the velvet and jewels, but the accumulated regret.",
-          "match_text": "wasn't the velvet and jewels, but",
-          "sentence_count": 1
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't that \"Phil\" was inherently awful. It was, in fact, aggressively…normal.",
-          "match_text": "It wasn't that \"Phil\" was inherently awful. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "It didn't happen visibly, there wasn't a dripping or obvious overflow. It was a saturation, a heavy, localized humidity.",
-          "match_text": "It didn't happen visibly, there wasn't a dripping or obvious overflow. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NOT_BUT",
-          "sentence": "The problem, I've realized, wasn't raising my intelligence, but in altering the global cognitive baseline. It's as though a universal dimmer switch was engaged.",
-          "match_text": "wasn't raising my intelligence, but",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "This was why, when Scout-Navigator 734, designated 'Kel' for efficiency, flagged an unusual artificial signature, the alarm protocols initiated weren't about invasion, or advanced weaponry, or previously unknown laws of physics. They were about *contamination*.",
-          "match_text": "This was why, when Scout-Navigator 734, designated 'Kel' for efficiency, flagged an unusual artificial signature, the alarm protocols initiated weren't about invasion, or advanced weaponry, or previously unknown laws of physics. They were",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't a booming, otherworldly proclamation. It was a… a conversational, gently weary tenor.",
-          "match_text": "It wasn't a booming, otherworldly proclamation. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't a typical brightness, the cheerful, bouncing reflection of the morning sun. This was a *heavy* brightness, a violet-edged, buzzing illumination that saturated the narrow gap between the brick buildings.",
-          "match_text": "It wasn't a typical brightness, the cheerful, bouncing reflection of the morning sun. This was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't merely information flooding his brain. It was *manipulation*.",
-          "match_text": "It wasn't merely information flooding his brain. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "## The Ghost in the Glass\n\nThe darkness lifted, but it wasn't a welcoming brightness. It was a jagged, buzzing illumination, a sensation akin to being shocked awake.",
-          "match_text": "## The Ghost in the Glass\n\nThe darkness lifted, but it wasn't a welcoming brightness. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NO_LONGER",
-          "sentence": "It was no longer about flashy visuals. It was about existence.",
-          "match_text": "It was no longer about flashy visuals. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NOT_BUT",
-          "sentence": "It wasn't painful, but demanding. It was a directive, a silent, brutal order.",
-          "match_text": "wasn't painful, but",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "This wasn't merely a revelation. It was preparation.",
-          "match_text": "This wasn't merely a revelation. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NOT_BUT",
-          "sentence": "This wasn't an invasion of my mind, but a command for its execution.",
-          "match_text": "wasn't an invasion of my mind, but",
-          "sentence_count": 1
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "He wasn't entirely inaccurate. It was simply.",
-          "match_text": "He wasn't entirely inaccurate. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "The problem, it turned out, wasn't the algorithm. It was the *reality* it was trying to map.",
-          "match_text": "The problem, it turned out, wasn't the algorithm. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "The cords weren't choosing the *most probable* tangle. They were briefly capable of adopting configurations that, within our observed universe, should have been mathematically impossible.",
-          "match_text": "The cords weren't choosing the *most probable* tangle. They were",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "They realized the distortions generated by the 'controlled tangles' weren't merely bending dimensions. They were, in a limited capacity, compressing probability.",
-          "match_text": "They realized the distortions generated by the 'controlled tangles' weren't merely bending dimensions. They were",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "Reginald *was* my magical focus, but his strength wasn't explosive bursts or flashy illusions. It was resilience.",
-          "match_text": "Reginald *was* my magical focus, but his strength wasn't explosive bursts or flashy illusions. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NOT_BUT",
-          "sentence": "The grain wasn't merely coarse, but possessed a symphony of microscopic rises and falls, a detailed mapping of its history.",
-          "match_text": "wasn't merely coarse, but",
-          "sentence_count": 1
-        },
-        {
-          "pattern_name": "S1_RE_NOT_BUT",
-          "sentence": "I understood, slowly, painfully, that the answer wasn't to find a way to break the cycle, but to enrich the cycle.",
-          "match_text": "wasn't to find a way to break the cycle, but",
-          "sentence_count": 1
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't a violent storm of confusion, a blizzard of unconnected fragments. It was, horribly, elegantly, a settling.",
-          "match_text": "It wasn't a violent storm of confusion, a blizzard of unconnected fragments. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "The problem wasn't that it made no sense, the problem was that it made perfect sense. That was infinitely worse.",
-          "match_text": "The problem wasn't that it made no sense, the problem was that it made perfect sense. That was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "The terror, then, wasn't the unknown. It was the complete, horrible coherence.",
-          "match_text": "The terror, then, wasn't the unknown. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NOT_PERIOD_SAMEVERB",
-          "sentence": "The \"keepers\" didn't want a countermeasure. They wanted assistance.",
-          "match_text": "The \"keepers\" didn't want a countermeasure. They wanted",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't a tool for direction. It was a guide for acceptance.",
-          "match_text": "It wasn't a tool for direction. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "And in that horrible coherence, the beauty, and the terror, I understood that this wasn't merely folklore, a myth. This was architecture, a terrible, unseen structure, pulling us into its angular, inevitable embrace.",
-          "match_text": "And in that horrible coherence, the beauty, and the terror, I understood that this wasn't merely folklore, a myth. This was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "## The Grain of It\n\nThe worst part of having an eyepatch, truly, wasn't the altered perception, the strange adjustments to depth, or the persistent crick in my neck from subconsciously favoring one direction. It was the questions.",
-          "match_text": "## The Grain of It\n\nThe worst part of having an eyepatch, truly, wasn't the altered perception, the strange adjustments to depth, or the persistent crick in my neck from subconsciously favoring one direction. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't a spectacular, enormous acorn. It was a fairly typical specimen, plump and pale brown.",
-          "match_text": "It wasn't a spectacular, enormous acorn. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "I wasn't viewing a faded, reconstructed impression. It was a flawless, instantaneous, fully realized perception.",
-          "match_text": "I wasn't viewing a faded, reconstructed impression. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't the heroic, romantic navy-blue of wartime posters. It was dirty, bitter, and carried the permanent tang of burning oil.",
-          "match_text": "It wasn't the heroic, romantic navy-blue of wartime posters. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't attraction, this.  It was… fascination.",
-          "match_text": "It wasn't attraction, this.  It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't aimed at killing soldiers. It was focused on logistical infrastructure.",
-          "match_text": "It wasn't aimed at killing soldiers. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "Because the truth of power, and of kingdoms, wasn't written in ballads, or carved in monuments. It was forged in the filth, and kept there, diligently swept under the rug.",
-          "match_text": "Because the truth of power, and of kingdoms, wasn't written in ballads, or carved in monuments. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't a neurological quirk.  It was me.",
-          "match_text": "It wasn't a neurological quirk.  It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't a deliberate artistic choice. It was exhaustion.",
-          "match_text": "It wasn't a deliberate artistic choice. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't the complaints themselves. It was the *confidence*.",
-          "match_text": "It wasn't the complaints themselves. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "Because this wasn't just another dating app. This was dating, powered by *Google*.",
-          "match_text": "Because this wasn't just another dating app. This was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NO_LONGER",
-          "sentence": "It was no longer about witty profiles or attractive photos. It was about maximizing that number.",
-          "match_text": "It was no longer about witty profiles or attractive photos. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NOT_BUT",
-          "sentence": "It wasn't a violent wound, the fading, but a long, insidious erosion.",
-          "match_text": "wasn't a violent wound, the fading, but",
-          "sentence_count": 1
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "The statement wasn't dramatic, a shout against a dying light. It was a statement of exhausted, almost clinical observation.",
-          "match_text": "The statement wasn't dramatic, a shout against a dying light. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't the grief of a forgotten empire, though the stones of Ugarit remembered plenty. It was a colder, sharper grief, the awareness of cycles, of history refusing to truly bury its dead.",
-          "match_text": "It wasn't the grief of a forgotten empire, though the stones of Ugarit remembered plenty. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "The \"Sea Peoples\" weren't merely refugees, pirates, or conquerors. They were instruments.",
-          "match_text": "The \"Sea Peoples\" weren't merely refugees, pirates, or conquerors. They were",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "But it wasn't merely a military invasion. It was a reckoning.",
-          "match_text": "But it wasn't merely a military invasion. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't painful, at least, immediately. It was a saturation.",
-          "match_text": "It wasn't painful, at least, immediately. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't booming, demonic. It was…friendly.",
-          "match_text": "It wasn't booming, demonic. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "This wasn't a friendly call.  It was an assessment.",
-          "match_text": "This wasn't a friendly call.  It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NOT_BUT",
-          "sentence": "It took a while, several lifetimes' worth of it, to understand that this wasn't a curse, but a…constant.",
-          "match_text": "wasn't a curse, but",
-          "sentence_count": 1
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "But immortality, I knew, wasn't a prize. It was a consequence.",
-          "match_text": "But immortality, I knew, wasn't a prize. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "The problem, I discovered, wasn't necessarily about other people being physically present. It was about observation.",
-          "match_text": "The problem, I discovered, wasn't necessarily about other people being physically present. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "This wasn't simply a building; it was the anchor of her life. It was the repository of generations, the focal point of a ritual that spanned decades.",
-          "match_text": "This wasn't simply a building; it was the anchor of her life. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "She realized that her holding onto the darkness wasn't merely a response to grief. It was a delaying tactic.",
-          "match_text": "She realized that her holding onto the darkness wasn't merely a response to grief. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "The lighthouse wasn't built to warn ships. It was a beacon.",
-          "match_text": "The lighthouse wasn't built to warn ships. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "The memories of the crowded marketplace, the laughter, the brother, those weren't *my* memories. They were fragments of a consciousness, projected, deliberately, to anchor me, to create a semblance of identity.",
-          "match_text": "The memories of the crowded marketplace, the laughter, the brother, those weren't *my* memories. They were",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "The yearly visits to Port Blossom weren't for supplies.  They were reconnaissance, seeking signs of awakening, of the Maris attempting to reconnect.",
-          "match_text": "The yearly visits to Port Blossom weren't for supplies.  They were",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_SIMPLE_BE_NOT_IT_BE",
-          "sentence": "The first \"powers\" manifested by Hope aren't explosive. It's fortitude.",
-          "match_text": "The first \"powers\" manifested by Hope aren't explosive. It's",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NOT_BUT",
-          "sentence": "She understands that those retreats aren't acts of rejection, but necessary acts of self-preservation.",
-          "match_text": "aren't acts of rejection, but",
-          "sentence_count": 1
-        },
-        {
-          "pattern_name": "S1_RE_NOT_BUT",
-          "sentence": "I'm trying to articulate the experience of being haunted, not by the memories of the dead, but by the projections of a disordered mind.",
-          "match_text": "not by the memories of the dead, but",
-          "sentence_count": 1
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't a violent breaking, a crashing explosion. It was a *withdrawal*.",
-          "match_text": "It wasn't a violent breaking, a crashing explosion. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't merely representing my apartment.  It was displaying my apartment embedded in a larger, illustrated landscape.",
-          "match_text": "It wasn't merely representing my apartment.  It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't despair.  It was a reluctant amusement.",
-          "match_text": "It wasn't despair.  It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_SIMPLE_BE_NOT_IT_BE",
-          "sentence": "Because the issue isn't *in* my body. It's *outside* it.",
-          "match_text": "Because the issue isn't *in* my body. It's",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't a surge of fondness, a planned recollection. It was the inherent, automatic loop of a routine.",
-          "match_text": "It wasn't a surge of fondness, a planned recollection. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NOT_BUT",
-          "sentence": "These questions aren't about detail, but establishing fundamental realities.",
-          "match_text": "aren't about detail, but",
-          "sentence_count": 1
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "The issue, it turned out, wasn't access. It was saturation.",
-          "match_text": "The issue, it turned out, wasn't access. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "The memories, the fading, the fallibility - these weren't imperfections. They were a necessity.",
-          "match_text": "The memories, the fading, the fallibility - these weren't imperfections. They were",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NOT_BUT",
-          "sentence": "It wasn't about erasing, but altering.",
-          "match_text": "wasn't about erasing, but",
-          "sentence_count": 1
-        },
-        {
-          "pattern_name": "S1_RE_NOT_BUT",
-          "sentence": "It wasn't a closing of eyes, for there were none, but a shift in resonance, a momentary slackening in the eternal tension of being.",
-          "match_text": "wasn't a closing of eyes, for there were none, but",
-          "sentence_count": 1
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "They weren't patterns of adaptation, of symbiotic evolution. They were aggressive, consuming.",
-          "match_text": "They weren't patterns of adaptation, of symbiotic evolution. They were",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "This 'infection', then, wasn't limited to the third planet. It was spreading.",
-          "match_text": "This 'infection', then, wasn't limited to the third planet. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "They weren't merely objects. They were, in the closest analogue the infinite could achieve, its cells.",
-          "match_text": "They weren't merely objects. They were",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "This wasn't a failure of emotional regulation.  It was a failure of meaning.",
-          "match_text": "This wasn't a failure of emotional regulation.  It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NOT_BUT",
-          "sentence": "It wasn't the work itself, but the *feeling*.",
-          "match_text": "wasn't the work itself, but",
-          "sentence_count": 1
-        },
-        {
-          "pattern_name": "S1_RE_NOT_BUT",
-          "sentence": "He wasn't flashy, published in smaller local newspapers, but he was diligent and dedicated.",
-          "match_text": "wasn't flashy, published in smaller local newspapers, but",
-          "sentence_count": 1
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "The grief she offered, the channeled emotion, wasn't satisfying the creature. It was…showing it.",
-          "match_text": "The grief she offered, the channeled emotion, wasn't satisfying the creature. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NOT_BUT",
-          "sentence": "They weren't intending to kill, but clearly sought incapacitation.",
-          "match_text": "weren't intending to kill, but",
-          "sentence_count": 1
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "The gravity, I realized, wasn't merely being manipulated around our shuttle. It was bearing down on my shoulders, the impossible, unbearable, burden of a declaration of war.",
-          "match_text": "The gravity, I realized, wasn't merely being manipulated around our shuttle. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't a purely aesthetic fascination.  It was a sense that she possessed a resilience, a gentle fortitude, that was rapidly being extinguished.",
-          "match_text": "It wasn't a purely aesthetic fascination.  It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "This wasn't rescue.  It was theft.",
-          "match_text": "This wasn't rescue.  It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NOT_BUT",
-          "sentence": "It wasn't a fear of doctors, specifically, but a clinical, detached awareness of my own fragile mortality.",
-          "match_text": "wasn't a fear of doctors, specifically, but",
-          "sentence_count": 1
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "There wasn't a falling sensation, a ripping, or a transition. It was… becoming.",
-          "match_text": "There wasn't a falling sensation, a ripping, or a transition. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't the rich, vibrant spectrum of a former consciousness. It was a resonance.",
-          "match_text": "It wasn't the rich, vibrant spectrum of a former consciousness. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't about achieving the things on the list, I realized. It was about the *attempt*.",
-          "match_text": "It wasn't about achieving the things on the list, I realized. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "But it wasn't joy.  It was a complicated, muddy sort of relief.",
-          "match_text": "But it wasn't joy.  It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NOT_BUT",
-          "sentence": "\"  \n\nBecause sometimes, the greatest strength lies, not in dreaming of a better world, but in knowing what darkness it contains.",
-          "match_text": "not in dreaming of a better world, but",
-          "sentence_count": 1
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't a friendly query. It was a professional baseline, a calibration to understand if this was a situation she needed to manage, a problem she needed to solve.",
-          "match_text": "It wasn't a friendly query. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't a neatly defined pathogen. It was the cumulative erosion of purpose.",
-          "match_text": "It wasn't a neatly defined pathogen. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NOT_BUT",
-          "sentence": "It wasn't prophecy, nor healing, but a terrible, exhilarating expansion of perception.",
-          "match_text": "wasn't prophecy, nor healing, but",
-          "sentence_count": 1
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't money. It was a ritual.",
-          "match_text": "It wasn't money. It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
-          "sentence": "I'd always known, buried beneath layers of academic justification, that my compulsion wasn't merely about possessing the artifacts.  It was about unlocking the secrets they contained.",
-          "match_text": "I'd always known, buried beneath layers of academic justification, that my compulsion wasn't merely about possessing the artifacts.  It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't merely a scholar's pursuit of knowledge.  It was a selfish desire, a reckless attempt to transcend the boundaries of my limited perception.",
-          "match_text": "It wasn't merely a scholar's pursuit of knowledge.  It was",
-          "sentence_count": 2
-        },
-        {
-          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
-          "sentence": "It wasn't a gentle lifting of consciousness, a gradual bloom of awareness. It was a violent *snap*, a full-power surge of cognition directly into a fully realized, yet foreign, sensory experience.",
-          "match_text": "It wasn't a gentle lifting of consciousness, a gradual bloom of awareness. It was",
-          "sentence_count": 2
-        }
-      ]
-    },
-    {
       "model": "openai/chatgpt-4o-latest",
       "test_model": "openai/chatgpt-4o-latest",
       "sample_count": 300,
@@ -20885,8 +20829,8 @@
       ]
     },
     {
-      "model": "qwen/qwen3-4b:free",
-      "test_model": "qwen/qwen3-4b:free",
+      "model": "qwen/qwen3-4b",
+      "test_model": "qwen/qwen3-4b",
       "sample_count": 222,
       "total_chars": 1663136,
       "started_at": "2025-10-25T09:54:10.792400+00:00",
