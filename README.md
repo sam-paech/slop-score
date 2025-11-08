@@ -1,36 +1,8 @@
 # Slop-Score: Writing Metrics Analyzer
 
-An in-browser text analysis tool that detects AI-generated "slop" patterns, repetitive language, and rhetorical contrast structures in writing.
+An in-browser text analysis tool that detects AI-generated "slop" patterns, repetitive language, and "Not X, but Y" constructions in writing.
 
-## Features
-
-### 1. **Slop Index** (per 1,000 words)
-Detects overused AI-generated phrases using weighted scoring:
-- Unigrams (weight: 1)
-- Bigrams (weight: 2)
-- Trigrams (weight: 8)
-
-### 2. **Repetition Score** (%)
-Measures over-use of bigrams and trigrams compared to human writing baselines.
-- Uses wordfreq frequency database as baseline
-- Compares against human-authored text patterns
-- Calculates top 40 over-represented n-grams
-
-### 3. **Contrast Pattern Detection** (per 1,000 chars)
-Detects "not X, but Y" rhetorical patterns common in AI writing:
-- **Stage 1**: 10 surface-level regex patterns
-- **Stage 2**: 35 POS-tagged patterns using wink-pos-tagger
-- Merges overlapping matches across sentence boundaries
-
-### 4. **Top Over-Represented Words**
-Identifies words used more frequently than expected based on Zipf distribution.
-
-### 5. **Top N-grams**
-Shows bigrams and trigrams over-used compared to human writing baseline.
-
-### 6. **Exact Repeated Phrases**
-Finds verbatim repetitions based on top trigram analysis.
-
+Try it at: https://eqbench.com/slop-score.html
 
 ## Implementation Details
 
