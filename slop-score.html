@@ -178,6 +178,44 @@
     .row { grid-template-columns: 1fr; }
     .panel { display: none; }
     .leaderboard-row.selected .leaderboard-report-btn { display: inline-block; }
+
+    /* Fix container padding for small screens */
+    .container { padding: 12px; }
+
+    /* Fix paint-splash animation size */
+    .paint-splash { width: 90vw; height: 90vw; max-width: 350px; max-height: 350px; }
+
+    /* Fix modal max-width */
+    .modal-content { max-width: 90vw; }
+
+    /* Fix navigation dropdown min-width */
+    .nav-dropdown-menu { min-width: 150px; max-width: 90vw; }
+
+    /* Fix leaderboard spacing and wrapping */
+    .leaderboard-row { gap: 4px; align-items: flex-start; }
+
+    /* Allow model name to wrap without increasing row height */
+    .leaderboard-name {
+      flex: 0 0 100px;
+      white-space: normal;
+      overflow: visible;
+      line-height: 1.3;
+      max-height: 33px; /* ~2 lines at 13px font-size with 1.3 line-height */
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* Keep bar container stretching but reduce score min-width */
+    .leaderboard-bar-container { flex: 1; }
+
+    /* Reduce score spacing and align to top */
+    .leaderboard-score { min-width: 45px; align-self: flex-start; padding-top: 2px; }
+
+    /* Fix tooltip width */
+    .metric-with-tooltip .tooltip-text { width: auto; max-width: 90vw; right: 0; }
   }
   @media (min-width: 769px) {
     .leaderboard-report-btn { display: none !important; }
