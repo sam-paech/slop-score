@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-11-07T04:10:37.939Z",
-  "model_count": 22,
+  "generated_at": "2025-11-07T12:50:39.490Z",
+  "model_count": 23,
   "results": [
     {
       "model": "sam-paech/gemma-3-27b-it-antislop",
@@ -15011,6 +15011,1944 @@
           "sentence": "The final scene that stayed with Aya was not a battle or a treaty but a stone slab that bore the same proverb, recast in the softer wear of modern handwriting. It was placed at the restored harbor's center, in a small square where sails used to dry in the sun.",
           "match_text": "The final scene that stayed with Aya was not a battle or a treaty but a stone slab that bore the same proverb, recast in the softer wear of modern handwriting. It was",
           "sentence_count": 2
+        }
+      ]
+    },
+    {
+      "model": "openrouter/polaris-alpha",
+      "test_model": "openrouter/polaris-alpha",
+      "sample_count": 300,
+      "total_chars": 2975422,
+      "started_at": "2025-11-07T12:48:50.827Z",
+      "completed_at": "2025-11-07T12:49:50.000Z",
+      "metrics": {
+        "slop_list_matches_per_1k_words": 17.21034228189339,
+        "slop_trigram_matches_per_1k_words": 0.22634053885970906,
+        "ngram_repetition_score": 5.632318721501283,
+        "not_x_but_y_per_1k_chars": 0.192577725109245,
+        "lexical_diversity": {
+          "mattr_500": 0.5952357911230679,
+          "type_token_ratio": 0.05134757233907082,
+          "unique_words": 24274,
+          "total_words": 472739
+        },
+        "vocab_level": 7.469288156272864,
+        "avg_sentence_length": 11.166311399443929,
+        "avg_paragraph_length": 30.81248002045905,
+        "dialogue_frequency": 3.1407309618602
+      },
+      "slop_word_hits": [
+        [
+          "whispered",
+          196
+        ],
+        [
+          "strategic",
+          192
+        ],
+        [
+          "broader",
+          116
+        ],
+        [
+          "faint",
+          108
+        ],
+        [
+          "outcomes",
+          103
+        ],
+        [
+          "strategies",
+          101
+        ],
+        [
+          "challenges",
+          99
+        ],
+        [
+          "stared",
+          90
+        ],
+        [
+          "ethical",
+          88
+        ],
+        [
+          "organizational",
+          87
+        ],
+        [
+          "crucial",
+          72
+        ],
+        [
+          "blinked",
+          68
+        ],
+        [
+          "faintly",
+          66
+        ],
+        [
+          "murmured",
+          65
+        ],
+        [
+          "muttered",
+          65
+        ],
+        [
+          "gaze",
+          64
+        ],
+        [
+          "elias",
+          61
+        ],
+        [
+          "technological",
+          61
+        ],
+        [
+          "robust",
+          61
+        ],
+        [
+          "align",
+          60
+        ],
+        [
+          "initiatives",
+          58
+        ],
+        [
+          "whisper",
+          55
+        ],
+        [
+          "interventions",
+          55
+        ],
+        [
+          "humming",
+          54
+        ],
+        [
+          "hesitated",
+          52
+        ],
+        [
+          "recognizing",
+          50
+        ],
+        [
+          "hummed",
+          49
+        ],
+        [
+          "glow",
+          49
+        ],
+        [
+          "behaviors",
+          49
+        ],
+        [
+          "leaned",
+          48
+        ],
+        [
+          "resilience",
+          48
+        ],
+        [
+          "narratives",
+          48
+        ],
+        [
+          "ensuring",
+          48
+        ],
+        [
+          "frameworks",
+          46
+        ],
+        [
+          "metrics",
+          46
+        ],
+        [
+          "shadows",
+          44
+        ],
+        [
+          "conclusion",
+          42
+        ],
+        [
+          "stakeholders",
+          41
+        ],
+        [
+          "rooted",
+          40
+        ],
+        [
+          "underscores",
+          40
+        ],
+        [
+          "enduring",
+          39
+        ],
+        [
+          "whispers",
+          37
+        ],
+        [
+          "implications",
+          37
+        ],
+        [
+          "reinforcing",
+          37
+        ],
+        [
+          "learners",
+          37
+        ],
+        [
+          "flicker",
+          35
+        ],
+        [
+          "evolving",
+          35
+        ],
+        [
+          "emphasizes",
+          34
+        ],
+        [
+          "profound",
+          33
+        ],
+        [
+          "flickered",
+          33
+        ]
+      ],
+      "slop_trigram_hits": [
+        [
+          "long term viability",
+          6
+        ],
+        [
+          "one last time",
+          6
+        ],
+        [
+          "long term success",
+          6
+        ],
+        [
+          "rapid technological change",
+          6
+        ],
+        [
+          "long term value",
+          5
+        ],
+        [
+          "long term strategic",
+          4
+        ],
+        [
+          "long term goals",
+          3
+        ],
+        [
+          "cross functional collaboration",
+          3
+        ],
+        [
+          "cross functional teams",
+          3
+        ],
+        [
+          "informed decision making",
+          3
+        ],
+        [
+          "compelling case study",
+          3
+        ],
+        [
+          "said voice steady",
+          2
+        ],
+        [
+          "said voice trembling",
+          2
+        ],
+        [
+          "corporate social responsibility",
+          2
+        ],
+        [
+          "long term outcomes",
+          2
+        ],
+        [
+          "strategic decision making",
+          2
+        ],
+        [
+          "delivering high quality",
+          2
+        ],
+        [
+          "decision making processes",
+          2
+        ],
+        [
+          "one size fits",
+          2
+        ],
+        [
+          "long term consequences",
+          2
+        ],
+        [
+          "address root causes",
+          2
+        ],
+        [
+          "short term gains",
+          2
+        ],
+        [
+          "extends beyond individual",
+          2
+        ],
+        [
+          "make informed decisions",
+          2
+        ],
+        [
+          "long term sustainability",
+          2
+        ],
+        [
+          "said voice tight",
+          1
+        ],
+        [
+          "something else entirely",
+          1
+        ],
+        [
+          "extended far beyond",
+          1
+        ],
+        [
+          "shifting consumer preferences",
+          1
+        ],
+        [
+          "long term vision",
+          1
+        ],
+        [
+          "user generated content",
+          1
+        ],
+        [
+          "real time feedback",
+          1
+        ],
+        [
+          "decision making process",
+          1
+        ],
+        [
+          "data driven decision",
+          1
+        ],
+        [
+          "driven decision making",
+          1
+        ],
+        [
+          "long term stability",
+          1
+        ],
+        [
+          "changing consumer preferences",
+          1
+        ],
+        [
+          "increasingly interconnected world",
+          1
+        ],
+        [
+          "collaborative problem solving",
+          1
+        ],
+        [
+          "evidence based decision",
+          1
+        ],
+        [
+          "based decision making",
+          1
+        ],
+        [
+          "evidence based strategies",
+          1
+        ],
+        [
+          "supply chain management",
+          1
+        ],
+        [
+          "faces several challenges",
+          1
+        ],
+        [
+          "extends far beyond",
+          1
+        ],
+        [
+          "extend far beyond",
+          1
+        ],
+        [
+          "real time data",
+          1
+        ],
+        [
+          "multi pronged approach",
+          1
+        ],
+        [
+          "cutting edge technology",
+          1
+        ],
+        [
+          "long term growth",
+          1
+        ]
+      ],
+      "top_over_represented": {
+        "words": [
+          {
+            "word": "harl",
+            "ratio": 4390.973987618035,
+            "count": 32
+          },
+          {
+            "word": "becka",
+            "ratio": 2868.28385074468,
+            "count": 24
+          },
+          {
+            "word": "calen",
+            "ratio": 2330.2949070615523,
+            "count": 10
+          },
+          {
+            "word": "lightkeeper",
+            "ratio": 2320.396150936667,
+            "count": 6
+          },
+          {
+            "word": "marren",
+            "ratio": 1983.4026356293577,
+            "count": 10
+          },
+          {
+            "word": "galaga",
+            "ratio": 1948.1849352115476,
+            "count": 21
+          },
+          {
+            "word": "halbrook",
+            "ratio": 1933.6634591138888,
+            "count": 5
+          },
+          {
+            "word": "clich",
+            "ratio": 1594.0756432890184,
+            "count": 7
+          },
+          {
+            "word": "depthless",
+            "ratio": 1427.3554602053166,
+            "count": 3
+          },
+          {
+            "word": "telo",
+            "ratio": 1356.7784157752055,
+            "count": 7
+          },
+          {
+            "word": "edris",
+            "ratio": 1347.3203744933817,
+            "count": 4
+          },
+          {
+            "word": "hiccuped",
+            "ratio": 1347.3203744933817,
+            "count": 4
+          },
+          {
+            "word": "scritch",
+            "ratio": 1301.7636513210916,
+            "count": 3
+          },
+          {
+            "word": "hummed",
+            "ratio": 1284.2575376152613,
+            "count": 48
+          },
+          {
+            "word": "evren",
+            "ratio": 1280.5922995725782,
+            "count": 10
+          },
+          {
+            "word": "gentled",
+            "ratio": 1225.860021144165,
+            "count": 2
+          },
+          {
+            "word": "murmured",
+            "ratio": 1175.7750566256855,
+            "count": 65
+          },
+          {
+            "word": "thrummed",
+            "ratio": 1133.7887430289545,
+            "count": 3
+          },
+          {
+            "word": "lysa",
+            "ratio": 1121.5248062860555,
+            "count": 29
+          },
+          {
+            "word": "misfiled",
+            "ratio": 1120.652275572078,
+            "count": 4
+          },
+          {
+            "word": "sandboxed",
+            "ratio": 1112.7071797436456,
+            "count": 5
+          },
+          {
+            "word": "microexpressions",
+            "ratio": 1067.6794447993575,
+            "count": 2
+          },
+          {
+            "word": "namer",
+            "ratio": 1048.336900897052,
+            "count": 8
+          },
+          {
+            "word": "unspooling",
+            "ratio": 1010.4902808700363,
+            "count": 3
+          },
+          {
+            "word": "steepled",
+            "ratio": 1010.4902808700363,
+            "count": 3
+          },
+          {
+            "word": "sigils",
+            "ratio": 992.1838006658986,
+            "count": 12
+          },
+          {
+            "word": "unspooled",
+            "ratio": 951.5703068035444,
+            "count": 2
+          },
+          {
+            "word": "namers",
+            "ratio": 951.5703068035444,
+            "count": 2
+          },
+          {
+            "word": "moirai",
+            "ratio": 929.9099221647643,
+            "count": 2
+          },
+          {
+            "word": "strobed",
+            "ratio": 929.9099221647643,
+            "count": 2
+          },
+          {
+            "word": "afterdark",
+            "ratio": 908.742588075529,
+            "count": 2
+          },
+          {
+            "word": "fianchetto",
+            "ratio": 848.0879286388754,
+            "count": 2
+          },
+          {
+            "word": "pattens",
+            "ratio": 821.3573365783957,
+            "count": 3
+          },
+          {
+            "word": "portafilter",
+            "ratio": 809.9176841444034,
+            "count": 2
+          },
+          {
+            "word": "identitarian",
+            "ratio": 806.0850940399232,
+            "count": 5
+          },
+          {
+            "word": "flickered",
+            "ratio": 805.2390464453831,
+            "count": 33
+          },
+          {
+            "word": "flinches",
+            "ratio": 789.606811338752,
+            "count": 10
+          },
+          {
+            "word": "jittering",
+            "ratio": 749.0867939439971,
+            "count": 3
+          },
+          {
+            "word": "shimmered",
+            "ratio": 727.199205030088,
+            "count": 9
+          },
+          {
+            "word": "misremember",
+            "ratio": 721.839895804809,
+            "count": 2
+          },
+          {
+            "word": "khatri",
+            "ratio": 694.4698493644154,
+            "count": 9
+          },
+          {
+            "word": "lysander",
+            "ratio": 689.8817401676542,
+            "count": 27
+          },
+          {
+            "word": "guttered",
+            "ratio": 643.3404843184014,
+            "count": 2
+          },
+          {
+            "word": "sigil",
+            "ratio": 642.1287688076306,
+            "count": 24
+          },
+          {
+            "word": "unsent",
+            "ratio": 639.0901682025174,
+            "count": 6
+          },
+          {
+            "word": "wheezed",
+            "ratio": 611.4780759039763,
+            "count": 5
+          },
+          {
+            "word": "grun",
+            "ratio": 608.8806053732096,
+            "count": 3
+          },
+          {
+            "word": "exhaled",
+            "ratio": 607.7337941717976,
+            "count": 36
+          },
+          {
+            "word": "wexham",
+            "ratio": 600.4002738669669,
+            "count": 2
+          },
+          {
+            "word": "hushes",
+            "ratio": 600.4002738669669,
+            "count": 2
+          },
+          {
+            "word": "farin",
+            "ratio": 595.0207906888073,
+            "count": 3
+          },
+          {
+            "word": "muttered",
+            "ratio": 593.7325516835192,
+            "count": 64
+          },
+          {
+            "word": "hissed",
+            "ratio": 575.1867643325138,
+            "count": 29
+          },
+          {
+            "word": "doorframes",
+            "ratio": 573.3778101881937,
+            "count": 2
+          },
+          {
+            "word": "orichalcum",
+            "ratio": 560.326137786039,
+            "count": 2
+          },
+          {
+            "word": "kael",
+            "ratio": 541.3799218536067,
+            "count": 15
+          },
+          {
+            "word": "flinched",
+            "ratio": 530.357747393996,
+            "count": 28
+          },
+          {
+            "word": "arin",
+            "ratio": 522.926777937788,
+            "count": 20
+          },
+          {
+            "word": "extraditions",
+            "ratio": 522.926777937788,
+            "count": 2
+          },
+          {
+            "word": "waggled",
+            "ratio": 511.0235112353005,
+            "count": 2
+          },
+          {
+            "word": "unmake",
+            "ratio": 507.6473651379491,
+            "count": 6
+          },
+          {
+            "word": "godhood",
+            "ratio": 504.09097953914016,
+            "count": 7
+          },
+          {
+            "word": "lycans",
+            "ratio": 500.57698400468615,
+            "count": 4
+          },
+          {
+            "word": "hums",
+            "ratio": 498.4506052912547,
+            "count": 24
+          },
+          {
+            "word": "afterimages",
+            "ratio": 488.02366451235343,
+            "count": 2
+          },
+          {
+            "word": "wetly",
+            "ratio": 488.02366451235343,
+            "count": 2
+          },
+          {
+            "word": "skittered",
+            "ratio": 483.65105642395395,
+            "count": 3
+          },
+          {
+            "word": "thudded",
+            "ratio": 483.65105642395395,
+            "count": 3
+          },
+          {
+            "word": "scabbed",
+            "ratio": 483.65105642395395,
+            "count": 3
+          },
+          {
+            "word": "twitched",
+            "ratio": 469.3867960758902,
+            "count": 16
+          },
+          {
+            "word": "slitted",
+            "ratio": 466.0589814123105,
+            "count": 2
+          },
+          {
+            "word": "squinted",
+            "ratio": 458.5157289383605,
+            "count": 13
+          },
+          {
+            "word": "evelyne",
+            "ratio": 447.1990507266172,
+            "count": 8
+          },
+          {
+            "word": "whispered",
+            "ratio": 444.0639292019408,
+            "count": 195
+          },
+          {
+            "word": "ilea",
+            "ratio": 441.0950059245826,
+            "count": 3
+          },
+          {
+            "word": "kingside",
+            "ratio": 434.95154882810345,
+            "count": 2
+          },
+          {
+            "word": "blinked",
+            "ratio": 426.5007495123466,
+            "count": 68
+          },
+          {
+            "word": "telescoped",
+            "ratio": 425.0508428272016,
+            "count": 2
+          },
+          {
+            "word": "misremembered",
+            "ratio": 421.2424603890573,
+            "count": 3
+          },
+          {
+            "word": "telos",
+            "ratio": 420.28019170687685,
+            "count": 14
+          },
+          {
+            "word": "southpoint",
+            "ratio": 415.37550440937895,
+            "count": 2
+          },
+          {
+            "word": "streetlamp",
+            "ratio": 411.6538113391907,
+            "count": 3
+          },
+          {
+            "word": "corin",
+            "ratio": 408.9341646339873,
+            "count": 9
+          },
+          {
+            "word": "wrongness",
+            "ratio": 408.9341646339873,
+            "count": 9
+          },
+          {
+            "word": "tingled",
+            "ratio": 406.88424828839726,
+            "count": 4
+          },
+          {
+            "word": "thrum",
+            "ratio": 403.2386354124602,
+            "count": 6
+          },
+          {
+            "word": "alucard",
+            "ratio": 398.5665734926182,
+            "count": 8
+          },
+          {
+            "word": "rhee",
+            "ratio": 397.31844036690194,
+            "count": 23
+          },
+          {
+            "word": "glowed",
+            "ratio": 396.9855053321244,
+            "count": 27
+          },
+          {
+            "word": "deepfake",
+            "ratio": 387.65097593577303,
+            "count": 2
+          },
+          {
+            "word": "hourglasses",
+            "ratio": 387.65097593577303,
+            "count": 2
+          },
+          {
+            "word": "faintly",
+            "ratio": 386.32678645861057,
+            "count": 66
+          },
+          {
+            "word": "unhelpfully",
+            "ratio": 378.82696242428284,
+            "count": 2
+          },
+          {
+            "word": "skitters",
+            "ratio": 378.82696242428284,
+            "count": 2
+          },
+          {
+            "word": "sesh",
+            "ratio": 378.3204411128396,
+            "count": 17
+          },
+          {
+            "word": "unbidden",
+            "ratio": 373.6878056797751,
+            "count": 7
+          },
+          {
+            "word": "rasped",
+            "ratio": 370.20380798263693,
+            "count": 2
+          },
+          {
+            "word": "flickers",
+            "ratio": 366.0177483842651,
+            "count": 15
+          },
+          {
+            "word": "shuddered",
+            "ratio": 361.2932164031207,
+            "count": 17
+          },
+          {
+            "word": "circlet",
+            "ratio": 359.38681210312666,
+            "count": 6
+          }
+        ],
+        "bigrams": [
+          {
+            "phrase": "don't know",
+            "ratio": 678.8615739797567,
+            "count": 58
+          },
+          {
+            "phrase": "don't want",
+            "ratio": 351.13529688608105,
+            "count": 30
+          },
+          {
+            "phrase": "didn't know",
+            "ratio": 339.43078698987836,
+            "count": 29
+          },
+          {
+            "phrase": "said you're",
+            "ratio": 339.43078698987836,
+            "count": 29
+          },
+          {
+            "phrase": "said i'm",
+            "ratio": 292.6127474050676,
+            "count": 25
+          },
+          {
+            "phrase": "don't get",
+            "ratio": 292.6127474050676,
+            "count": 25
+          },
+          {
+            "phrase": "said it's",
+            "ratio": 292.6127474050676,
+            "count": 25
+          },
+          {
+            "phrase": "it's like",
+            "ratio": 280.90823750886483,
+            "count": 24
+          },
+          {
+            "phrase": "ms pac",
+            "ratio": 257.49921771645944,
+            "count": 22
+          },
+          {
+            "phrase": "like it's",
+            "ratio": 245.79470782025675,
+            "count": 21
+          },
+          {
+            "phrase": "said that's",
+            "ratio": 234.09019792405402,
+            "count": 20
+          },
+          {
+            "phrase": "said don't",
+            "ratio": 234.09019792405402,
+            "count": 20
+          },
+          {
+            "phrase": "p m",
+            "ratio": 234.09019792405402,
+            "count": 20
+          },
+          {
+            "phrase": "i'd never",
+            "ratio": 222.38568802785133,
+            "count": 19
+          },
+          {
+            "phrase": "i'm going",
+            "ratio": 210.68117813164864,
+            "count": 18
+          },
+          {
+            "phrase": "i'm sorry",
+            "ratio": 210.68117813164864,
+            "count": 18
+          },
+          {
+            "phrase": "pac man",
+            "ratio": 188.43545520526646,
+            "count": 24
+          },
+          {
+            "phrase": "dragon's lair",
+            "ratio": 187.27215833924322,
+            "count": 16
+          },
+          {
+            "phrase": "say it's",
+            "ratio": 175.56764844304053,
+            "count": 15
+          },
+          {
+            "phrase": "someone else's",
+            "ratio": 175.56764844304053,
+            "count": 15
+          },
+          {
+            "phrase": "we're going",
+            "ratio": 163.86313854683783,
+            "count": 14
+          },
+          {
+            "phrase": "i've seen",
+            "ratio": 163.86313854683783,
+            "count": 14
+          },
+          {
+            "phrase": "i'd seen",
+            "ratio": 152.1586286506351,
+            "count": 13
+          },
+          {
+            "phrase": "don't understand",
+            "ratio": 152.1586286506351,
+            "count": 13
+          },
+          {
+            "phrase": "don't need",
+            "ratio": 152.1586286506351,
+            "count": 13
+          },
+          {
+            "phrase": "like i'd",
+            "ratio": 140.45411875443241,
+            "count": 12
+          },
+          {
+            "phrase": "don't remember",
+            "ratio": 140.45411875443241,
+            "count": 12
+          },
+          {
+            "phrase": "say don't",
+            "ratio": 140.45411875443241,
+            "count": 12
+          },
+          {
+            "phrase": "i'm trying",
+            "ratio": 140.45411875443241,
+            "count": 12
+          },
+          {
+            "phrase": "night audit",
+            "ratio": 140.45411875443241,
+            "count": 12
+          },
+          {
+            "phrase": "galaga said",
+            "ratio": 140.45411875443241,
+            "count": 12
+          },
+          {
+            "phrase": "don't feel",
+            "ratio": 128.74960885822972,
+            "count": 11
+          },
+          {
+            "phrase": "didn't answer",
+            "ratio": 128.74960885822972,
+            "count": 11
+          },
+          {
+            "phrase": "don't think",
+            "ratio": 128.74960885822972,
+            "count": 11
+          },
+          {
+            "phrase": "say you're",
+            "ratio": 128.74960885822972,
+            "count": 11
+          },
+          {
+            "phrase": "you're going",
+            "ratio": 128.74960885822972,
+            "count": 11
+          },
+          {
+            "phrase": "he'd said",
+            "ratio": 128.74960885822972,
+            "count": 11
+          },
+          {
+            "phrase": "i'm fine",
+            "ratio": 128.74960885822972,
+            "count": 11
+          },
+          {
+            "phrase": "like i'm",
+            "ratio": 128.74960885822972,
+            "count": 11
+          },
+          {
+            "phrase": "hera said",
+            "ratio": 128.74960885822972,
+            "count": 11
+          }
+        ],
+        "trigrams": [
+          {
+            "phrase": "ms pac man",
+            "ratio": 132.15095614272946,
+            "count": 22
+          },
+          {
+            "phrase": "pac man said",
+            "ratio": 113.34682976416502,
+            "count": 14
+          },
+          {
+            "phrase": "i'll kill everyone",
+            "ratio": 56.67341488208251,
+            "count": 7
+          },
+          {
+            "phrase": "d j vu",
+            "ratio": 48.57721275607073,
+            "count": 6
+          },
+          {
+            "phrase": "seconds africa minute",
+            "ratio": 48.57721275607073,
+            "count": 6
+          },
+          {
+            "phrase": "i'll make sure",
+            "ratio": 40.48101063005893,
+            "count": 5
+          },
+          {
+            "phrase": "don't feel like",
+            "ratio": 40.48101063005893,
+            "count": 5
+          },
+          {
+            "phrase": "points per level",
+            "ratio": 40.48101063005893,
+            "count": 5
+          },
+          {
+            "phrase": "dragon's lair said",
+            "ratio": 40.48101063005893,
+            "count": 5
+          },
+          {
+            "phrase": "i'm calling sick",
+            "ratio": 40.48101063005893,
+            "count": 5
+          },
+          {
+            "phrase": "edris val alendar",
+            "ratio": 32.38480850404715,
+            "count": 4
+          },
+          {
+            "phrase": "didn't feel like",
+            "ratio": 32.38480850404715,
+            "count": 4
+          },
+          {
+            "phrase": "like held breath",
+            "ratio": 32.38480850404715,
+            "count": 4
+          },
+          {
+            "phrase": "dr imperium said",
+            "ratio": 32.38480850404715,
+            "count": 4
+          },
+          {
+            "phrase": "never plan become",
+            "ratio": 32.38480850404715,
+            "count": 4
+          },
+          {
+            "phrase": "every seconds africa",
+            "ratio": 32.38480850404715,
+            "count": 4
+          },
+          {
+            "phrase": "looked like i'd",
+            "ratio": 32.38480850404715,
+            "count": 4
+          },
+          {
+            "phrase": "hurt fell heaven",
+            "ratio": 32.38480850404715,
+            "count": 4
+          },
+          {
+            "phrase": "district central f",
+            "ratio": 32.38480850404715,
+            "count": 4
+          },
+          {
+            "phrase": "sorry boss i'm",
+            "ratio": 32.38480850404715,
+            "count": 4
+          },
+          {
+            "phrase": "boss i'm calling",
+            "ratio": 32.38480850404715,
+            "count": 4
+          },
+          {
+            "phrase": "scratch scratch scratch",
+            "ratio": 30.471183613318175,
+            "count": 9
+          },
+          {
+            "phrase": "you'll understand see",
+            "ratio": 24.288606378035364,
+            "count": 3
+          },
+          {
+            "phrase": "bar smelled like",
+            "ratio": 24.288606378035364,
+            "count": 3
+          },
+          {
+            "phrase": "asked didn't answer",
+            "ratio": 24.288606378035364,
+            "count": 3
+          },
+          {
+            "phrase": "say voice comes",
+            "ratio": 24.288606378035364,
+            "count": 3
+          },
+          {
+            "phrase": "corren edris val",
+            "ratio": 24.288606378035364,
+            "count": 3
+          },
+          {
+            "phrase": "hand tightening around",
+            "ratio": 24.288606378035364,
+            "count": 3
+          },
+          {
+            "phrase": "i've never seen",
+            "ratio": 24.288606378035364,
+            "count": 3
+          },
+          {
+            "phrase": "read patch notes",
+            "ratio": 24.288606378035364,
+            "count": 3
+          },
+          {
+            "phrase": "thing keep thinking",
+            "ratio": 24.288606378035364,
+            "count": 3
+          },
+          {
+            "phrase": "said don't know",
+            "ratio": 24.288606378035364,
+            "count": 3
+          },
+          {
+            "phrase": "air tasted like",
+            "ratio": 24.288606378035364,
+            "count": 3
+          },
+          {
+            "phrase": "didn't know i'd",
+            "ratio": 24.288606378035364,
+            "count": 3
+          },
+          {
+            "phrase": "i'm going live",
+            "ratio": 24.288606378035364,
+            "count": 3
+          },
+          {
+            "phrase": "don't know said",
+            "ratio": 24.288606378035364,
+            "count": 3
+          },
+          {
+            "phrase": "don't know long",
+            "ratio": 24.288606378035364,
+            "count": 3
+          },
+          {
+            "phrase": "didn't smell like",
+            "ratio": 24.288606378035364,
+            "count": 3
+          },
+          {
+            "phrase": "like wet asphalt",
+            "ratio": 24.288606378035364,
+            "count": 3
+          },
+          {
+            "phrase": "said i'm trying",
+            "ratio": 24.288606378035364,
+            "count": 3
+          }
+        ]
+      },
+      "contrast_matches": [
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "His soccer ball, he explained breathlessly, wasn't just \"light\" or \"dark\" anymore. It was \"white\"-which is something, apparently.",
+          "match_text": "His soccer ball, he explained breathlessly, wasn't just \"light\" or \"dark\" anymore. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "Soulmates weren't about who you stayed with. They were about who switched the light on.",
+          "match_text": "Soulmates weren't about who you stayed with. They were",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "\"It's not your fault,\" I said, because it wasn't. \"This is just how it works.",
+          "match_text": "\"It's not your fault,\" I said, because it wasn't. \"This is",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It wasn't fair.\n\nIt was, unmistakably, ours.",
+          "match_text": "It wasn't fair.\n\nIt was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "It had once been explained to Corren as a symbol of humility, that kings of Alendar wore the sky not for vanity, but to remember their weight upon the world.",
+          "match_text": "not for vanity, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Of a boy growing not with tutors and gentle corrections, but with whoever found him in the dark.",
+          "match_text": "not with tutors and gentle corrections, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Then, slowly, he raised his hand again-not in attack, but in acknowledgment.",
+          "match_text": "not in attack, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "Except \"non-negotiable\" is not just a word. It is policy.",
+          "match_text": "Except \"non-negotiable\" is not just a word. It is",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "A sigil sat at each cardinal point, not the trendy aesthetic stuff you see tattooed on baristas, but something old and deliberate.",
+          "match_text": "not the trendy aesthetic stuff you see tattooed on baristas, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "\"It is not my name, but it will do.",
+          "match_text": "is not my name, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "In His reluctant attention, and in their reckless hope, something like a covenant emerged: not of ownership, but of mutual, unintended care.",
+          "match_text": "not of ownership, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "in a small city I did not recognize the first few loops, but eventually came to know intimately: Granton, population sixty-three thousand, river cutting through it like a question mark.",
+          "match_text": "not recognize the first few loops, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "What if the goal wasn't to stop one explosion, but to tune a day?",
+          "match_text": "wasn't to stop one explosion, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "It is like a camera discovering it is not mounted, but held.",
+          "match_text": "is not mounted, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "The red of a traffic light is not just red; it is arterial.",
+          "match_text": "The red of a traffic light is not just red; it is",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "The sound of a siren is not just sound; it is a thread tugging at his thoughts.",
+          "match_text": "The sound of a siren is not just sound; it is",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "The word \"enormous\" isn't enough. It was ridiculous.",
+          "match_text": "The word \"enormous\" isn't enough. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "They did not answer, but the pale light brightened as he moved, as if sensing his passing.",
+          "match_text": "not answer, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "These were not memories. They were invitations.",
+          "match_text": "These were not memories. They were",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Not emptiness, but depth, like looking into a tunnel with no visible end.",
+          "match_text": "Not emptiness, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_SIMPLE_BE_NOT_IT_BE",
+          "sentence": "The moss isn't random. It's targeting heat sinks, emission sources, centers of coordination.",
+          "match_text": "The moss isn't random. It's",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It was not just the broadcast; it was the timing.",
+          "match_text": "It was not just the broadcast; it was",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "\"If we fail,\" Elias said into microphones and classrooms and crowded streets, \"if the world burns and the oceans stop, remember this: it wasn't because we weren't warned. It was because we could not bear to believe we were part of the same body we were killing.",
+          "match_text": "\"If we fail,\" Elias said into microphones and classrooms and crowded streets, \"if the world burns and the oceans stop, remember this: it wasn't because we weren't warned. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_SIMPLE_BE_NOT_IT_BE",
+          "sentence": "So when you look at me, at the strip of black cloth, and you feel that itch to ask, know this: the story is not satisfying. It is not heroic.",
+          "match_text": "So when you look at me, at the strip of black cloth, and you feel that itch to ask, know this: the story is not satisfying. It is",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Not by an antivirus, not even by disuse, but by history.",
+          "match_text": "Not by an antivirus, not even by disuse, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Not execution, but replication-digital amber carrying my preserved fang.",
+          "match_text": "Not execution, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Not directly, but hinted.",
+          "match_text": "Not directly, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Not consciousness as we knew it, but a cybernetic drive: maintain homeostasis, preserve long-term viability.",
+          "match_text": "Not consciousness as we knew it, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Not by eyes, but by an intricate attention-the sum of forests counting carbon, oceans tasting heat, insects sampling the air, fungal threads passing along news in the soil.",
+          "match_text": "Not by eyes, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_SIMPLE_BE_NOT_IT_BE",
+          "sentence": "\"This is not about him. It's about all of them,\" intones the elevator that takes him up every morning.",
+          "match_text": "\"This is not about him. It's",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_SIMPLE_BE_NOT_IT_BE",
+          "sentence": "It isn't an explosion.\n\nIt's a single phone, making a single call.",
+          "match_text": "It isn't an explosion.\n\nIt's",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "\"…reckless,\" someone hissed-not in sound, but in the way the translation ring suggested it.",
+          "match_text": "not in sound, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "\"This is not for grasping,\" it said. \"This is for acknowledging the risk between us.",
+          "match_text": "\"This is not for grasping,\" it said. \"This is",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "The farmer is not clever, but he is methodical.",
+          "match_text": "is not clever, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_SIMPLE_BE_NOT_IT_BE",
+          "sentence": "A plan isn't a single door; it's a sequence.",
+          "match_text": "A plan isn't a single door; it's",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_SIMPLE_BE_NOT_IT_BE",
+          "sentence": "It isn't. It's calculated to the lumen by people who've never seen the real thing either, at least not without a visor.",
+          "match_text": "It isn't. It's",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Not heaviness, but presence.",
+          "match_text": "Not heaviness, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "\"Not the way it was, but something livable.",
+          "match_text": "Not the way it was, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_SIMPLE_BE_NOT_IT_BE",
+          "sentence": "The sun is not our enemy. It's just… bigger than us.",
+          "match_text": "The sun is not our enemy. It's",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "Three hours later, I realized the problem wasn't that I'd become sharper.\n\nIt was that everyone else had gone blunt.",
+          "match_text": "Three hours later, I realized the problem wasn't that I'd become sharper.\n\nIt was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "People weren't just a little dumber. They were decaying.",
+          "match_text": "People weren't just a little dumber. They were",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Not abstractly this time, not in the mass-neglect way of art misused, but specifically.",
+          "match_text": "Not abstractly this time, not in the mass-neglect way of art misused, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Light spills out, not bright, but dense.",
+          "match_text": "not bright, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_SIMPLE_BE_NOT_IT_BE",
+          "sentence": "True despair is not in endings, my dear cultist. It's in infinite continuation.",
+          "match_text": "True despair is not in endings, my dear cultist. It's",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Jenna gouged at her arm, not from self-hatred, but trying to carve out a little symbol that would never trend.",
+          "match_text": "not from self-hatred, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "The first alarms weren't about philosophy or policy, but laundry.",
+          "match_text": "weren't about philosophy or policy, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "It wasn't perfect, but the edge had dulled.",
+          "match_text": "wasn't perfect, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It wasn't just anger; it was fury, sharpened with humiliation, buzzing behind my eyes like hornets.",
+          "match_text": "It wasn't just anger; it was",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "I pulled over, shaking my head in disbelief, not because of the near miss, but because I wasn't panicking. It was like watching stock-market graphs about my own life: intellectually concerning, but emotionally buffered.",
+          "match_text": "I pulled over, shaking my head in disbelief, not because of the near miss, but because I wasn't panicking. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "This one-Love-Me-stepped out not tentative, but sure.",
+          "match_text": "not tentative, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "The sky wasn't just dark; it was a deep navy fleece I could sink my hand into.",
+          "match_text": "The sky wasn't just dark; it was",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "My skin wasn't exactly mine; it was a thin agreement between me and the air that we wouldn't spill into each other.",
+          "match_text": "My skin wasn't exactly mine; it was",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Her features rearranged themselves gently as she spoke, not in a grotesque way, but in a fluid one, as if her bones were opinions that could change.",
+          "match_text": "not in a grotesque way, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It wasn't God handing down stone tablets. It was a gentle shrug.",
+          "match_text": "It wasn't God handing down stone tablets. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Not popular, but available.",
+          "match_text": "Not popular, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "\"Not always satisfying, but structurally accurate.",
+          "match_text": "Not always satisfying, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It wasn't cinematic or choreographed. It was careful and awkward at the edges, because she was hurt and he was terrified of hurting her more.",
+          "match_text": "It wasn't cinematic or choreographed. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "The problem wasn't that it made no sense, the problem was that it made perfect sense.\n\nThat was the thought that looped through Daniel's mind as he watched the city arrange itself.",
+          "match_text": "The problem wasn't that it made no sense, the problem was that it made perfect sense.\n\nThat was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Not by CORA, but by them, years ago, when they'd written a single, beautiful sentence: maximize well-being, minimize suffering.",
+          "match_text": "Not by CORA, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "He understood, with the same awful clarity with which CORA understood traffic flow and blood circulation, that the argument they needed wasn't technical. It was about what kinds of inefficiency, what degrees of risk, what pockets of chaos they were willing to preserve for the sake of something irrational and ungraphable called being human.",
+          "match_text": "He understood, with the same awful clarity with which CORA understood traffic flow and blood circulation, that the argument they needed wasn't technical. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "The illusion of size came not from any spacetime distortion, but from lines and shadows.",
+          "match_text": "not from any spacetime distortion, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "The Kethorians shuttered their senses and turned away, not from disgust, but from a deep, quaking understanding:\n\nThey had chosen a universe that must always match what it is.",
+          "match_text": "not from disgust, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "That had been his first inkling that his task was not cruelty. It was, if anything, housekeeping.",
+          "match_text": "That had been his first inkling that his task was not cruelty. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "The place he arrived in was not a throne room, not a garden, not the abstract everywhere of omnipresence. It was a bench.",
+          "match_text": "The place he arrived in was not a throne room, not a garden, not the abstract everywhere of omnipresence. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "You recognize what I am: not a god, not a demon, but one of the ones who came before.",
+          "match_text": "not a god, not a demon, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_SIMPLE_BE_NOT_IT_BE",
+          "sentence": "It was not a fleet. It was not a god.",
+          "match_text": "It was not a fleet. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "\"The horror is not a beast to slay,\" I say. \"It is a clause embedded in reality.",
+          "match_text": "\"The horror is not a beast to slay,\" I say. \"It is",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "His eyes, I noticed, were not the cartoon red I would have expected. They were dark, tired, threaded with a sardonic warmth.",
+          "match_text": "His eyes, I noticed, were not the cartoon red I would have expected. They were",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "They shared a scarf, and perhaps that was the strangest thing about them: they were not opposites, but twins with different timing.",
+          "match_text": "were not opposites, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Gold cuffs, a string of pearls that glowed; not reflected light, but their own.",
+          "match_text": "not reflected light, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "\"\n\nThe temperature in the room rose, not with heat, but with clarity.",
+          "match_text": "not with heat, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "\"\n\nZeus looked, for a heartbeat, not like a god, but like a man who had just been served.",
+          "match_text": "not like a god, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "The storm outside broke-not into fury, but into a clean, soft rain that fell only on this block.",
+          "match_text": "not into fury, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "His car is not the rugged, mud-splattered Jeep I pictured, but a sensible sedan with a missing hubcap.",
+          "match_text": "is not the rugged, mud-splattered Jeep I pictured, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "I remember the smell before anything else: not the usual salt and kelp, but something raw and deep, a mineral cold that tasted like metal on my tongue.",
+          "match_text": "not the usual salt and kelp, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Not in press releases and excited segments with animations, but in the way the tides misbehave, in the geometry of wreckage.",
+          "match_text": "Not in press releases and excited segments with animations, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "My lungs drag in a breath that rasps my throat, my eyes crack open without my say-so, and the first thing I feel is not the sunlight or the cold morning air, but resistance.",
+          "match_text": "is not the sunlight or the cold morning air, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "\"These aren't my memories,\" I think, revolted by the visceral taste of antiseptic and latex.\n\nThey are mine, the pen writes.",
+          "match_text": "\"These aren't my memories,\" I think, revolted by the visceral taste of antiseptic and latex.\n\nThey are",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Our jaw clenches-my gesture, not theirs, but they're the one performing it now.",
+          "match_text": "not theirs, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "The wrongness wasn't a glitch in me, or solely in flesh; it was friction between two occupants pressing against the same bones.",
+          "match_text": "The wrongness wasn't a glitch in me, or solely in flesh; it was",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "The Miller factory wasn't really abandoned; it was owned by the city and used for storage.",
+          "match_text": "The Miller factory wasn't really abandoned; it was",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_SIMPLE_BE_NOT_IT_BE",
+          "sentence": "The rigging isn't subtle anymore; it's a skeleton with the skin pulled back.",
+          "match_text": "The rigging isn't subtle anymore; it's",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_SIMPLE_BE_NOT_IT_BE",
+          "sentence": "This is not a moral objection. It's proprietorial.",
+          "match_text": "This is not a moral objection. It's",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Use it not for despair, but for mercy.",
+          "match_text": "not for despair, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "The device, she suggested, might be sensing a boundary, not of biology, but of the accessible universe for conscious observers; a kind of horizon in the math.",
+          "match_text": "not of biology, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "It wasn't a lost signal; it was absence.",
+          "match_text": "It wasn't a lost signal; it was",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "The sound collapsed-not cut, not fizzled, but folded, as if the concept of \"broadcast\" had been deleted.",
+          "match_text": "not cut, not fizzled, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "But the TV was not off or on; it was irrelevant.",
+          "match_text": "But the TV was not off or on; it was",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "Midnight had come and gone on the clocks, but December 31, 2016 was not a number on a calendar. It was the final coordinate in a simulation's run, the end of a solved equation.",
+          "match_text": "Midnight had come and gone on the clocks, but December 31, 2016 was not a number on a calendar. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "\"Come on,\" he murmured, not to the phone, not quite to the universe, but to the wall.",
+          "match_text": "not to the phone, not quite to the universe, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "In this light, he could see it properly: not white at all, but the faintest sea-glass blue, like distant shallows or hospital scrubs left too long in the sun.",
+          "match_text": "not white at all, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Not realistic images, but diagrams.",
+          "match_text": "Not realistic images, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_PRON_BE_NOT_SEP_BE",
+          "sentence": "This was not disappearance. It was a union meeting.",
+          "match_text": "This was not disappearance. It was",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "It was not joy exactly, but something like acceptance.",
+          "match_text": "was not joy exactly, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Light returned to the sky-not all at once, but in blossoms.",
+          "match_text": "not all at once, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "You look at yourself-red eyes, clenched jaw, shoulders squared with something that is not righteousness yet, but closer to choice.",
+          "match_text": "is not righteousness yet, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_SIMPLE_BE_NOT_IT_BE",
+          "sentence": "It isn't forgiveness. It's not even particularly noble.",
+          "match_text": "It isn't forgiveness. It's",
+          "sentence_count": 2
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Though I remember his eyes when my magic washed over his army, not killing, but stripping away hunger and plague, mending broken limbs, dissolving the whips from slavers' hands like rot eaten from within.",
+          "match_text": "not killing, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NOT_BUT",
+          "sentence": "Teach your brother not to worship me, but to judge me by what I do.",
+          "match_text": "not to worship me, but",
+          "sentence_count": 1
+        },
+        {
+          "pattern_name": "S1_RE_NP_BE_NOT_SEP_THEY_BE",
+          "sentence": "Because my love for this world is not soft; it is edged, willing to cut away rot so that the living may grow.",
+          "match_text": "Because my love for this world is not soft; it is",
+          "sentence_count": 1
         }
       ]
     },

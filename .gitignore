@@ -3,3 +3,4 @@ human_writing_samples
 .claude
 wordfreq_python
 experiments
+.env

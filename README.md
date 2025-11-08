@@ -1,6 +1,6 @@
 # Slop-Score: Writing Metrics Analyzer
 
-A comprehensive text analysis tool that detects AI-generated "slop" patterns, repetitive language, and rhetorical contrast structures in writing.
+A text analysis tool that detects AI-generated "slop" patterns, repetitive language, and rhetorical contrast structures in writing.
 
 ## Features
 
@@ -31,31 +31,15 @@ Shows bigrams and trigrams over-used compared to human writing baseline.
 ### 6. **Exact Repeated Phrases**
 Finds verbatim repetitions based on top trigram analysis.
 
-## File Structure
-
-```
-slop-score/
-├── slop-score.html          # Main HTML interface
-├── js/
-│   ├── utils.js              # Text normalization & tokenization
-│   ├── metrics.js            # Core metrics (slop, repetition)
-│   ├── regexes-stage1.js     # Surface-level contrast patterns
-│   ├── regexes-stage2.js     # POS-based contrast patterns
-│   ├── pos-tagger.js         # Wink POS tagger wrapper
-│   └── contrast-detector.js  # Contrast pattern detection engine
-├── data/
-│   ├── human_writing_profile.json
-│   ├── slop_list.json
-│   ├── slop_list_bigrams.json
-│   └── slop_list_trigrams.json
-└── README.md
-```
 
 ## Implementation Details
 
-### Contrast Detection Algorithm
+### Slop List Matches
+First, the evaluated model generates 150 creative writing outputs and 150 essay outputs. Next, its writing is matched to a precomputed list of words and trigrams which are overused in AI text compared to human baselines.
 
-The contrast detector implements a 2-stage pipeline matching the Python reference:
+### Not-X-But-Y Pattern Detection
+
+The not-x-but-y detector implements a 2-stage regex pipeline:
 
 **Stage 1: Surface Patterns**
 - Runs 10 regex patterns on normalized text
@@ -68,43 +52,90 @@ The contrast detector implements a 2-stage pipeline matching the Python referenc
 - Maintains character offset mapping between tagged stream and raw text
 - Uses binary search for efficient offset lookups
 
-**Sentence Merging**
-- Merges overlapping matches across sentence boundaries
-- Returns full sentences containing detected patterns
-- Deduplicates using interval merging algorithm
+### Slop Score Calculation
+The Slop Score is a weighted composite metric designed to detect AI-generated text patterns:
 
-### UI Features
-
-- **Show More/Less**: All lists default to showing 10 items with expandable "Show more" buttons
-- **Live Updates**: Real-time analysis on button click
-- **Contrast Matches**: Displays full sentences with pattern names
-- **Resource Status**: Shows loading progress and errors
+- 60% - Slop Words: Frequency of individual words that appear unnaturally often in LLM outputs
+- 25% - Not-x-but-y Patterns: Frequency of contrast patterns like "not just X, but Y" which are overused by AI
+- 15% - Slop Trigrams: Frequency of 3-word phrases that appear unnaturally often in LLM outputs
 
 ## Usage
 
-1. Open `slop-score.html` in a modern browser
-2. Paste text into the textarea
-3. Click "Analyze"
-4. View metrics and expand sections for details
+### Benchmarking Models
 
-## Dependencies
+Use `bench-model.mjs` to generate text completions from any OpenAI-compatible API:
 
-- **wink-pos-tagger**: Loaded from CDN (https://cdn.jsdelivr.net/npm/wink-pos-tagger@3.0.2/+esm)
-- **wordfreq word frequencies**: Loaded from local data file
-- **Human writing baseline**: Local JSON file in `data/`
-- **Slop lists**: Local JSON files in `data/`
+```bash
+# Setup: Create .env file with your API credentials
+cp .env.example .env
+# Edit .env and set BASE_URL and API_KEY
 
-## Browser Compatibility
+# Basic usage (uses .env)
+./bench-model.mjs --model "openai/gpt-4o"
 
-Requires a modern browser with ES6 module support:
-- Chrome 61+
-- Firefox 60+
-- Safari 11+
-- Edge 79+
+# Or override with command-line args
+./bench-model.mjs \
+  --model "openai/gpt-4o" \
+  --base-url "https://openrouter.ai/api/v1/chat/completions" \
+  --api-key "your-key"
 
-## Notes
+# Custom settings
+./bench-model.mjs \
+  --model "meta-llama/llama-3.1-70b-instruct" \
+  --workers 16 \
+  --max-tokens 4096 \
+  --n-prompts 300
+```
 
-- POS tagging is optional; Stage 2 patterns will be skipped if tagger fails to load
-- All processing happens client-side
-- No data is sent to external servers
-- Original Python implementation can be found in the repository for reference
+**Features:**
+- Parallel generation with configurable worker count
+- Resume support (skips already-generated prompts)
+- Atomic file writes for safe concurrent operations
+- Progress tracking and error reporting
+- Saves to `results/[model-id].json` by default
+
+**Parameters:**
+- `--model` (required): Model identifier
+- `--base-url`: API endpoint (default: from .env BASE_URL or OPENAI_BASE_URL)
+- `--api-key`: API key (default: from .env API_KEY or OPENAI_API_KEY)
+- `--workers`: Number of parallel requests (default: 8)
+- `--max-tokens`: Max tokens per generation (default: 8096)
+- `--n-prompts`: Number of prompts to use (default: 300)
+- `--max-retries`: Max retries per request (default: 3)
+- `--prompts`: Path to prompts file (default: data/prompts.json)
+- `--results`: Custom output path
+
+**Environment variables (.env file):**
+- `BASE_URL`: API endpoint (e.g., `https://openrouter.ai/api/v1/chat/completions`)
+- `API_KEY`: Your API key
+
+### Generating the Leaderboard
+
+Use `generate-leaderboard.mjs` to analyze all results and create the leaderboard:
+
+```bash
+# Generate leaderboard from all results/*.json files
+./generate-leaderboard.mjs
+
+# Force recalculation of all models
+./generate-leaderboard.mjs --force
+
+# Force recalculation of human baseline
+./generate-leaderboard.mjs --force-recalc-human
+```
+
+**Features:**
+- Calculates all metrics (slop index, repetition, contrast patterns, etc.)
+- Caches results for faster subsequent runs
+- Includes human baseline from `human_writing_samples/*.txt`
+- Outputs to `data/leaderboard_results.json`
+
+**Metrics calculated:**
+- Slop list matches (word and trigram)
+- N-gram repetition score
+- Not-x-but-y contrast patterns
+- Lexical diversity (MATTR-500)
+- Flesch-Kincaid grade level
+- Average sentence/paragraph length
+- Dialogue frequency
+- Top over-represented words, bigrams, and trigrams
