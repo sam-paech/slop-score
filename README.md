@@ -1,6 +1,6 @@
 # Slop-Score: Writing Metrics Analyzer
 
-A text analysis tool that detects AI-generated "slop" patterns, repetitive language, and rhetorical contrast structures in writing.
+An in-browser text analysis tool that detects AI-generated "slop" patterns, repetitive language, and rhetorical contrast structures in writing.
 
 ## Features
 
@@ -139,3 +139,52 @@ Use `generate-leaderboard.mjs` to analyze all results and create the leaderboard
 - Average sentence/paragraph length
 - Dialogue frequency
 - Top over-represented words, bigrams, and trigrams
+
+## License and Citations
+
+### wordfreq
+
+This project includes a JavaScript port of [wordfreq](https://github.com/rspeer/wordfreq), which is used for baseline frequency analysis in the repetition scoring system.
+
+**Citation:**
+
+Robyn Speer. (2022). rspeer/wordfreq: v3.0 (v3.0.2). Zenodo. https://doi.org/10.5281/zenodo.7199437
+
+```bibtex
+@software{robyn_speer_2022_7199437,
+  author       = {Robyn Speer},
+  title        = {rspeer/wordfreq: v3.0},
+  month        = sep,
+  year         = 2022,
+  publisher    = {Zenodo},
+  version      = {v3.0.2},
+  doi          = {10.5281/zenodo.7199437},
+  url          = {https://doi.org/10.5281/zenodo.7199437}
+}
+```
+
+wordfreq is redistributable under the Apache license and includes data files under Creative Commons Attribution-ShareAlike 4.0 license (https://creativecommons.org/licenses/by-sa/4.0/).
+
+**Data Sources:**
+
+wordfreq contains data from the following sources:
+- [Google Books Ngrams](http://books.google.com/ngrams) and [Google Books Syntactic Ngrams](http://commondatastorage.googleapis.com/books/syntactic-ngrams/index.html)
+- [The Leeds Internet Corpus](http://corpus.leeds.ac.uk/list.html) from the University of Leeds Centre for Translation Studies
+- [Wikipedia](http://www.wikipedia.org)
+- [ParaCrawl](https://paracrawl.eu), a multilingual Web crawl
+- [OPUS OpenSubtitles 2018](http://opus.nlpl.eu/OpenSubtitles.php), originating from [OpenSubtitles](http://www.opensubtitles.org/)
+- SUBTLEX word lists (SUBTLEX-US, SUBTLEX-UK, SUBTLEX-CH, SUBTLEX-DE, and SUBTLEX-NL) created by Marc Brysbaert et al., available at http://crr.ugent.be/programs-data/subtitle-frequencies
+
+## How to Cite
+
+If you use slop-score in your research, please cite it as:
+
+```bibtex
+@misc{paech2025slopScore,
+      title={slop-score},
+      author={Samuel J. Paech},
+      year={2025},
+      howpublished={\url{https://github.com/sam-paech/slop-score}},
+      note={GitHub repository}
+}
+```
