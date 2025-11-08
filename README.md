@@ -33,7 +33,16 @@ The Slop Score is a weighted composite metric designed to detect AI-generated te
 
 ## Usage
 
+### Analysing Your Text
+To compute a slop score on your own text, visit https://eqbench.com/slop-score.html and click "Analyse text". A slop score and related metrics will be computed locally, in browser.
+
+Alternatively, serve this directory with:
+`python -m http.server`
+and browse to:
+http://localhost:8000
+
 ### Benchmarking Models
+A benchmarking script is also included. It generates 300 outputs from the same set of standardised prompts (Creative writing and essays) used for the leaderboard.
 
 Use `bench-model.mjs` to generate text completions from any OpenAI-compatible API:
 
@@ -86,13 +95,13 @@ cp .env.example .env
 Use `generate-leaderboard.mjs` to analyze all results and create the leaderboard:
 
 ```bash
-# Generate leaderboard from all results/*.json files
+# Generate leaderboard from all results/*.json files, skipping ones already computed
 ./generate-leaderboard.mjs
 
 # Force recalculation of all models
 ./generate-leaderboard.mjs --force
 
-# Force recalculation of human baseline
+# Force recalculation of human baseline (BYO human writing samples)
 ./generate-leaderboard.mjs --force-recalc-human
 ```
 
