@@ -96,12 +96,6 @@ Use `generate-leaderboard.mjs` to analyze all results and create the leaderboard
 ./generate-leaderboard.mjs --force-recalc-human
 ```
 
-**Features:**
-- Calculates all metrics (slop index, repetition, contrast patterns, etc.)
-- Caches results for faster subsequent runs
-- Includes human baseline from `human_writing_samples/*.txt`
-- Outputs to `data/leaderboard_results.json`
-
 **Metrics calculated:**
 - Slop list matches (word and trigram)
 - N-gram repetition score
