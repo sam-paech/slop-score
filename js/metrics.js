@@ -139,7 +139,7 @@ export async function loadSlopSets() {
     if (!Array.isArray(a)) return;
     for (const item of a) {
       if (!item || !item.length) continue;
-      const phrase = String(item[0]).toLowerCase().match(/[a-z]+(?:\s+[a-z]+)*/g);
+      const phrase = String(item[0]).toLowerCase().match(/[a-z]+(?:'[a-z]+)?(?:\s+[a-z]+(?:'[a-z]+)?)*/g);
       if (phrase) outSet.add(phrase[0]);
     }
   }
