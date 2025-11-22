@@ -196,11 +196,11 @@
 
     /* Allow model name to wrap without increasing row height */
     .leaderboard-name {
-      flex: 0 0 100px;
+      flex: 0 0 120px;
       white-space: normal;
-      overflow: visible;
       line-height: 1.3;
-      max-height: 33px; /* ~2 lines at 13px font-size with 1.3 line-height */
+      max-height: 34px; /* ~2 lines at 13px font-size with 1.3 line-height */
+      word-break: break-word;
       display: -webkit-box;
       -webkit-line-clamp: 2;
       line-clamp: 2;
@@ -608,6 +608,7 @@
           <li><strong>40%</strong> - Not-x-but-y Patterns: Frequency of contrast patterns like "not just X, but Y" which are overused by AI</li>
           <li><strong>15%</strong> - Slop Trigrams: Frequency of 3-word phrases that appear unnaturally often in LLM outputs</li>
         </ul>
+        <p>Find the source code here: <a href="https://github.com/sam-paech/slop-score/blob/main/data/slop_list.json" target="_blank" style="color: var(--accent);">https://github.com/sam-paech/slop-score</a></p>
 
         <h3>Slop Lists</h3>
         <p>The slop word and trigram lists are produced using the <a href="https://github.com/sam-paech/slop-forensics" target="_blank" style="color: var(--accent);">slop-forensics toolkit</a>. This tool identifies words and n-grams that are statistically over-represented in LLM outputs compared to human writing.</p>
@@ -1084,7 +1085,7 @@ function computeSlopScore(slopWordScore, slopTrigramScore, contrastScore) {
   const normTrigrams = normalizeValue(slopTrigramScore, normalizationRanges.slop_trigrams);
   const normContrast = normalizeValue(contrastScore, normalizationRanges.contrast);
 
-  // Weighted formula: 45% slop words + 40% not-x-but-y + 15% slop trigrams
+  // Weighted formula: 60% slop words + 25% not-x-but-y + 15% slop trigrams
   return (normWords * 0.6 + normContrast * 0.25 + normTrigrams * 0.15) * 100;
 }
 
@@ -1201,7 +1202,7 @@ function updateRightPanel(entry) {
         <div class="modal-metric-bg slop" style="width: ${entry.slopScore}%"></div>
         <div class="modal-metric-label">Slop Score</div>
         <div class="modal-metric-value">${entry.slopScore.toFixed(2)}</div>
-        <span class="tooltip-text">Combined metric: 45% slop words + 40% not-x-but-y patterns + 15% slop trigrams, normalized across all models</span>
+        <span class="tooltip-text">Combined metric: 60% slop words + 25% not-x-but-y patterns + 15% slop trigrams, normalized across all models</span>
       </div>
       <div class="modal-metric metric-with-tooltip">
         <div class="modal-metric-bg slop" style="width: ${normSlopWords * 100}%"></div>
@@ -1471,7 +1472,7 @@ function showDetailModal(entry) {
         <div class="modal-metric-bg slop" style="width: ${entry.slopScore}%"></div>
         <div class="modal-metric-label">Slop Score</div>
         <div class="modal-metric-value">${entry.slopScore.toFixed(2)}</div>
-        <span class="tooltip-text">Combined metric: 45% slop words + 40% not-x-but-y patterns + 15% slop trigrams, normalized across all models</span>
+        <span class="tooltip-text">Combined metric: 60% slop words + 25% not-x-but-y patterns + 15% slop trigrams, normalized across all models</span>
       </div>
       <div class="modal-metric metric-with-tooltip">
         <div class="modal-metric-bg slop" style="width: ${normSlopWords * 100}%"></div>

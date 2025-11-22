@@ -115,11 +115,28 @@ Use `generate-leaderboard.mjs` to analyze all results and create the leaderboard
 - Dialogue frequency
 - Top over-represented words, bigrams, and trigrams
 
-## License and Citations
+## License
 
-### wordfreq
+This project uses a dual-license structure:
 
-This project includes a JavaScript port of [wordfreq](https://github.com/rspeer/wordfreq), which is used for baseline frequency analysis in the repetition scoring system.
+### MIT License (Primary Components)
+
+The following components are licensed under the MIT License:
+- Slop Score computation and dependencies (human writing profile, slop lists in `data/`)
+- Results datasets in `results/`
+- JavaScript code in `js/` (excluding `wordfreq.js`)
+- All code in project root (`./`) including leaderboard generation and website
+- `slop-score.html` and related HTML files
+
+See [LICENSE](LICENSE) for full MIT license text.
+
+### Apache 2.0 & CC-BY-SA 4.0 (wordfreq Components)
+
+The following components retain their original wordfreq licensing:
+- `js/wordfreq.js` - Apache License 2.0
+- `data/large_en.msgpack.gz` - Creative Commons Attribution-ShareAlike 4.0
+
+This project includes a JavaScript port of [wordfreq](https://github.com/rspeer/wordfreq), used for baseline frequency analysis.
 
 **Citation:**
 
@@ -138,11 +155,7 @@ Robyn Speer. (2022). rspeer/wordfreq: v3.0 (v3.0.2). Zenodo. https://doi.org/10.
 }
 ```
 
-wordfreq is redistributable under the Apache license and includes data files under Creative Commons Attribution-ShareAlike 4.0 license (https://creativecommons.org/licenses/by-sa/4.0/).
-
-**Data Sources:**
-
-wordfreq contains data from the following sources:
+**wordfreq data sources:**
 - [Google Books Ngrams](http://books.google.com/ngrams) and [Google Books Syntactic Ngrams](http://commondatastorage.googleapis.com/books/syntactic-ngrams/index.html)
 - [The Leeds Internet Corpus](http://corpus.leeds.ac.uk/list.html) from the University of Leeds Centre for Translation Studies
 - [Wikipedia](http://www.wikipedia.org)
