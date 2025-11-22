@@ -591,6 +591,7 @@
       <div id="howItWorksBody">
         <h3>What is Slop Score?</h3>
         <p>Slop Score is a leaderboard and analysis tool for computing how much a given text looks/smells like AI "slop". It looks specifically at words and patterns that occur more frequently in AI text than in human text.</p>
+        <p>Find the source code here: <a href="https://github.com/sam-paech/slop-score" target="_blank" style="color: var(--accent);">https://github.com/sam-paech/slop-score</a></p>
 
         <h3>Not an AI Detector!</h3>
         <p>This tool works differently than most AI detectors: It looks for glaringly over-used patterns, rather than trying to classify the text as AI or human. It will detect words and phrases that smell of AI, but it won't reliably help you avoid AI detection. The best way to avoid AI detectors is to write in your own words.</p>
@@ -604,11 +605,11 @@
         <h3>Slop Score Calculation</h3>
         <p>The Slop Score is a weighted composite metric designed to detect AI-generated text patterns:</p>
         <ul style="line-height: 1.8;">
-          <li><strong>45%</strong> - Slop Words: Frequency of individual words that appear unnaturally often in LLM outputs</li>
-          <li><strong>40%</strong> - Not-x-but-y Patterns: Frequency of contrast patterns like "not just X, but Y" which are overused by AI</li>
+          <li><strong>60%</strong> - Slop Words: Frequency of individual words that appear unnaturally often in LLM outputs</li>
+          <li><strong>25%</strong> - Not-x-but-y Patterns: Frequency of contrast patterns like "not just X, but Y" which are overused by AI</li>
           <li><strong>15%</strong> - Slop Trigrams: Frequency of 3-word phrases that appear unnaturally often in LLM outputs</li>
         </ul>
-        <p>Find the source code here: <a href="https://github.com/sam-paech/slop-score/blob/main/data/slop_list.json" target="_blank" style="color: var(--accent);">https://github.com/sam-paech/slop-score</a></p>
+        
 
         <h3>Slop Lists</h3>
         <p>The slop word and trigram lists are produced using the <a href="https://github.com/sam-paech/slop-forensics" target="_blank" style="color: var(--accent);">slop-forensics toolkit</a>. This tool identifies words and n-grams that are statistically over-represented in LLM outputs compared to human writing.</p>
