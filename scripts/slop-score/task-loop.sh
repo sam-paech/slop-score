@@ -25,6 +25,7 @@ while true; do
   } | claude -p \
     --dangerously-skip-permissions \
     --output-format stream-json \
+    --verbose \
     > "$ITERATIONS_DIR/$TIMESTAMP.jsonl"
 
   # Add a small delay between iterations
