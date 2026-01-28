@@ -17,7 +17,12 @@ while true; do
 
   TIMESTAMP=$(date +%s)
 
-  cat "$SCRIPT_DIR/prompt.md" | claude -p \
+  {
+    cat "$SCRIPT_DIR/prompt.md"
+    echo ""
+    echo "---"
+    echo "**This iteration:** \`tasks/iterations/$TIMESTAMP.jsonl\`"
+  } | claude -p \
     --dangerously-skip-permissions \
     --output-format stream-json \
     > "$ITERATIONS_DIR/$TIMESTAMP.jsonl"
