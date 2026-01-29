@@ -1,0 +1,15 @@
+{
+  "name": "slop-score-cli",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "bun test",
+    "test:watch": "bun test --watch",
+    "build": "./build.sh",
+    "dev": "bun src/analyze.ts"
+  },
+  "dependencies": {
+    "@msgpack/msgpack": "^3.1.2",
+    "wink-pos-tagger": "^2.2.2"
+  }
+}

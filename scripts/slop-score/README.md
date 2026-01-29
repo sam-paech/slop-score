@@ -26,19 +26,19 @@ Requires [Bun](https://bun.sh) to be installed.
 
 ```bash
 # Basic usage
-bun scripts/slop-score/analyse.js input.md
+bun scripts/slop-score/analyze.js input.md
 
 # Output to file
-bun scripts/slop-score/analyse.js input.md -o results.json
+bun scripts/slop-score/analyze.js input.md -o results.json
 
 # Markdown output
-bun scripts/slop-score/analyse.js input.md --format markdown
+bun scripts/slop-score/analyze.js input.md --format markdown
 
 # Include all optional fields (word hits, trigram hits, contrast matches, etc.)
-bun scripts/slop-score/analyse.js input.md --all
+bun scripts/slop-score/analyze.js input.md --all
 
 # Read from stdin
-cat input.md | bun scripts/slop-score/analyse.js -
+cat input.md | bun scripts/slop-score/analyze.js -
 ```
 
 ### CLI Options
@@ -94,9 +94,9 @@ cat input.md | bun scripts/slop-score/analyse.js -
 
 ```
 scripts/slop-score/
-├── analyse.js              # Bundled script (run with bun)
+├── analyze.js              # Bundled script (run with bun)
 ├── src/
-│   ├── analyse.ts          # Main CLI entry point
+│   ├── analyze.ts          # Main CLI entry point
 │   ├── lib/                # Core modules
 │   └── __tests__/          # Test files
 ├── data/                   # Compressed data files
