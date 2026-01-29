@@ -15,12 +15,16 @@
 
 3. **Read the CLAUDE.md file** in `scripts/slop-score/` for project context and conventions
 
-4. **Complete the work** described in the task's `description` field
+4. **Read tasks/progress.txt** to learn from previous iterations
+   - Review learnings and gotchas from prior work
+   - Note any patterns or context relevant to your task
 
-5. **Mark the task complete** by updating the JSON file:
+5. **Complete the work** described in the task's `description` field
+
+6. **Mark the task complete** by updating the JSON file:
    - Set `status` to `"completed"`
 
-6. **Append your progress** to `tasks/progress.txt` using this format:
+7. **Append your progress** to `tasks/progress.txt` using this format:
 
    ```markdown
    ## [Date/Time] - [Task ID]
@@ -39,7 +43,7 @@
    - Use the iteration path provided at the end of this prompt (under "This iteration:")
    - The **learnings section is critical** - it helps future iterations avoid repeating mistakes and understand the codebase better
 
-7. **Exit immediately** - Do NOT look for another task
+8. **Exit immediately** - Do NOT look for another task
 
 ## Critical Rules
 

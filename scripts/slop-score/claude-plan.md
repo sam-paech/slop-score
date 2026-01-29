@@ -6,17 +6,17 @@ Create a portable CLI script at `scripts/slop-score/` that analyzes text files f
 ## Approach
 Use `bun build` to create a **bundled JavaScript file** with all dependencies included:
 1. Compress data files (73MB JSON → 7MB gzipped)
-2. Bundle all TypeScript + dependencies into single `analyse.js`
-3. Users run: `bun scripts/slop-score/analyse.js input.md`
+2. Bundle all TypeScript + dependencies into single `analyze.js`
+3. Users run: `bun scripts/slop-score/analyze.js input.md`
 
 No compilation to native executable - works on any platform with Bun.
 
 ## Directory Structure
 ```
 scripts/slop-score/
-├── analyse.js              # Bundled script (all deps included, ~2MB)
+├── analyze.js              # Bundled script (all deps included, ~2MB)
 ├── src/
-│   ├── analyse.ts          # Main CLI entry point (source)
+│   ├── analyze.ts          # Main CLI entry point (source)
 │   ├── lib/
 │   │   ├── metrics.ts      # Core metrics
 │   │   ├── utils.ts        # Text utilities
@@ -38,25 +38,25 @@ scripts/slop-score/
 ## CLI Interface
 ```bash
 # Basic usage
-bun scripts/slop-score/analyse.js input.md
+bun scripts/slop-score/analyze.js input.md
 
 # Output to file
-bun scripts/slop-score/analyse.js input.md -o results.json
+bun scripts/slop-score/analyze.js input.md -o results.json
 
 # Markdown output
-bun scripts/slop-score/analyse.js input.md --format markdown
+bun scripts/slop-score/analyze.js input.md --format markdown
 
 # Include optional fields
-bun scripts/slop-score/analyse.js input.md --slop-word-hits --contrast-matches
+bun scripts/slop-score/analyze.js input.md --slop-word-hits --contrast-matches
 
 # Include all optional fields
-bun scripts/slop-score/analyse.js input.md --all
+bun scripts/slop-score/analyze.js input.md --all
 
 # Read from stdin
-cat input.md | bun scripts/slop-score/analyse.js -
+cat input.md | bun scripts/slop-score/analyze.js -
 
 # Development (run TypeScript source directly)
-bun scripts/slop-score/src/analyse.ts input.md
+bun scripts/slop-score/src/analyze.ts input.md
 ```
 
 ### CLI Options
@@ -179,13 +179,13 @@ The reference fixture is generated ONCE using the existing `js/` code, then our 
 **CLI Tests:**
 ```typescript
 // End-to-end
-$ bun analyse.js data/test.txt
+$ bun analyze.js data/test.txt
 → Valid JSON output with all expected fields
 
-$ bun analyse.js data/test.txt --format markdown
+$ bun analyze.js data/test.txt --format markdown
 → Markdown output with headers
 
-$ echo "test" | bun analyse.js -
+$ echo "test" | bun analyze.js -
 → Reads from stdin
 ```
 
@@ -215,12 +215,12 @@ The leaderboard shows typical ranges:
 
 ```bash
 # Create reference script at project root (temporary, not committed)
-# reference-analyse.mjs
+# reference-analyze.mjs
 ```
 
 ```javascript
 #!/usr/bin/env node
-// reference-analyse.mjs - Generate reference output from existing JS code
+// reference-analyze.mjs - Generate reference output from existing JS code
 import { readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
 
@@ -260,7 +260,7 @@ console.log(JSON.stringify(result, null, 2));
 
 ```bash
 # Generate reference output
-node reference-analyse.mjs data/test.txt > scripts/slop-score/fixtures/test.txt.expected.json
+node reference-analyze.mjs data/test.txt > scripts/slop-score/fixtures/test.txt.expected.json
 
 # Also generate for a known "sloppy" text and a known "clean" text
 ```
@@ -325,7 +325,7 @@ Key modifications in all ports:
 2. **Decompression**: Use Bun's native gzip decompression for .gz files
 3. **POS tagger**: Import `wink-pos-tagger` directly (bundled by bun build)
 
-### Step 3: Create main CLI (`src/analyse.ts`)
+### Step 3: Create main CLI (`src/analyze.ts`)
 
 ```typescript
 #!/usr/bin/env bun
@@ -356,7 +356,7 @@ const { values, positionals } = parseArgs({
 });
 
 if (values.help || positionals.length === 0) {
-  console.log(`Usage: bun analyse.js <input-file> [options]
+  console.log(`Usage: bun analyze.js <input-file> [options]
 
 Options:
   -o, --output <file>       Write output to file
@@ -429,13 +429,13 @@ cd "$(dirname "$0")"
 bun install
 
 # Bundle all dependencies into single JS file
-bun build ./src/analyse.ts \
-  --outfile analyse.js \
+bun build ./src/analyze.ts \
+  --outfile analyze.js \
   --target bun \
   --minify
 
-echo "Built: analyse.js ($(du -h analyse.js | cut -f1))"
-echo "Test: bun analyse.js ../data/test.txt"
+echo "Built: analyze.js ($(du -h analyze.js | cut -f1))"
+echo "Test: bun analyze.js ../data/test.txt"
 ```
 
 ### Step 5: Create package.json for dev dependencies
@@ -449,7 +449,7 @@ echo "Test: bun analyse.js ../data/test.txt"
     "test": "bun test",
     "test:watch": "bun test --watch",
     "build": "./build.sh",
-    "dev": "bun src/analyse.ts"
+    "dev": "bun src/analyze.ts"
   },
   "dependencies": {
     "@msgpack/msgpack": "^3.1.2",
@@ -465,7 +465,7 @@ Run tests with: `cd scripts/slop-score && bun test`
 ```bash
 cd scripts/slop-score
 ./build.sh
-git add analyse.js data/
+git add analyze.js data/
 git commit -m "Add slop-score CLI tool"
 ```
 
@@ -474,10 +474,10 @@ git commit -m "Add slop-score CLI tool"
 ### Source Files
 | File | Description |
 |------|-------------|
-| `scripts/slop-score/analyse.js` | Bundled CLI (committed, ~2MB) |
+| `scripts/slop-score/analyze.js` | Bundled CLI (committed, ~2MB) |
 | `scripts/slop-score/build.sh` | Build script (for maintainers) |
 | `scripts/slop-score/package.json` | Dev dependencies + test scripts |
-| `scripts/slop-score/src/analyse.ts` | Main CLI source |
+| `scripts/slop-score/src/analyze.ts` | Main CLI source |
 | `scripts/slop-score/src/lib/utils.ts` | Text utilities |
 | `scripts/slop-score/src/lib/metrics.ts` | Core metrics + data loading |
 | `scripts/slop-score/src/lib/wordfreq.ts` | Wordfreq class |
@@ -507,7 +507,7 @@ git commit -m "Add slop-score CLI tool"
 
 | Component | Size |
 |-----------|------|
-| analyse.js (bundled) | ~2 MB |
+| analyze.js (bundled) | ~2 MB |
 | large_en.msgpack.gz | 1.4 MB |
 | human_writing_profile.json.gz | 7 MB |
 | slop_list files | ~40 KB |
@@ -515,15 +515,15 @@ git commit -m "Add slop-score CLI tool"
 
 ## Verification
 
-1. `bun scripts/slop-score/analyse.js data/test.txt` - outputs JSON metrics
-2. `bun scripts/slop-score/analyse.js data/test.txt --format markdown` - outputs markdown
-3. `bun scripts/slop-score/analyse.js data/test.txt --all` - includes all optional fields
-4. `echo "This is a test" | bun scripts/slop-score/analyse.js -` - reads from stdin
+1. `bun scripts/slop-score/analyze.js data/test.txt` - outputs JSON metrics
+2. `bun scripts/slop-score/analyze.js data/test.txt --format markdown` - outputs markdown
+3. `bun scripts/slop-score/analyze.js data/test.txt --all` - includes all optional fields
+4. `echo "This is a test" | bun scripts/slop-score/analyze.js -` - reads from stdin
 5. Compare slop scores with web UI for same input
 
 ## Notes
 
 - Requires Bun to be installed (works on macOS, Linux, Windows)
-- No installation step - just `bun scripts/slop-score/analyse.js`
+- No installation step - just `bun scripts/slop-score/analyze.js`
 - Data files are decompressed at runtime in memory
 - To rebuild after source changes: `cd scripts/slop-score && ./build.sh`

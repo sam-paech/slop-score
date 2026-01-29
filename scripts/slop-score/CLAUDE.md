@@ -6,7 +6,7 @@ You are working on creating a self-contained CLI tool for analyzing text for AI 
 
 **Goal**: Create a portable CLI at `scripts/slop-score/` that analyzes text files for AI writing patterns ("slop"). Users with Bun installed run it directly without installation.
 
-**Approach**: Bundle TypeScript source + dependencies into single `analyse.js` using `bun build`.
+**Approach**: Bundle TypeScript source + dependencies into single `analyze.js` using `bun build`.
 
 ## Directory Structure
 
@@ -28,7 +28,7 @@ slop-score/                    # Project root
 ├── slop-score.html           # Browser UI (reference for analysis logic)
 └── scripts/slop-score/        # YOUR WORK GOES HERE
     ├── src/
-    │   ├── analyse.ts        # Main CLI
+    │   ├── analyze.ts        # Main CLI
     │   ├── lib/              # Library modules
     │   └── __tests__/        # Test files
     ├── data/                 # Copied/compressed data files

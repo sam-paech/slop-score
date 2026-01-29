@@ -6,7 +6,7 @@ Create a portable, self-contained CLI tool that analyzes text files for AI "slop
 
 ## Goals
 
-1. **Zero Installation**: Users run `bun scripts/slop-score/analyse.js input.md` directly
+1. **Zero Installation**: Users run `bun scripts/slop-score/analyze.js input.md` directly
 2. **Feature Parity**: Match the analysis capabilities of the existing browser-based `slop-score.html`
 3. **Portable**: Single bundled JS file with embedded dependencies
 4. **TDD**: All code developed with tests first
@@ -23,9 +23,9 @@ Create a portable, self-contained CLI tool that analyzes text files for AI "slop
 
 ```
 scripts/slop-score/
-├── analyse.js              # Bundled script (all deps included, ~2MB)
+├── analyze.js              # Bundled script (all deps included, ~2MB)
 ├── src/
-│   ├── analyse.ts          # Main CLI entry point
+│   ├── analyze.ts          # Main CLI entry point
 │   ├── lib/
 │   │   ├── metrics.ts      # Core slop scoring
 │   │   ├── utils.ts        # Text tokenization utilities
@@ -60,25 +60,25 @@ scripts/slop-score/
 
 ```bash
 # Basic usage
-bun scripts/slop-score/analyse.js input.md
+bun scripts/slop-score/analyze.js input.md
 
 # Output to file
-bun scripts/slop-score/analyse.js input.md -o results.json
+bun scripts/slop-score/analyze.js input.md -o results.json
 
 # Markdown output
-bun scripts/slop-score/analyse.js input.md --format markdown
+bun scripts/slop-score/analyze.js input.md --format markdown
 
 # Include optional fields
-bun scripts/slop-score/analyse.js input.md --slop-word-hits --contrast-matches
+bun scripts/slop-score/analyze.js input.md --slop-word-hits --contrast-matches
 
 # Include all optional fields
-bun scripts/slop-score/analyse.js input.md --all
+bun scripts/slop-score/analyze.js input.md --all
 
 # Read from stdin
-cat input.md | bun scripts/slop-score/analyse.js -
+cat input.md | bun scripts/slop-score/analyze.js -
 
 # Development (run TypeScript directly)
-bun scripts/slop-score/src/analyse.ts input.md
+bun scripts/slop-score/src/analyze.ts input.md
 ```
 
 ### CLI Options
@@ -140,7 +140,7 @@ bun scripts/slop-score/src/analyse.ts input.md
 
 ## Acceptance Criteria
 
-1. **Functional**: `bun scripts/slop-score/analyse.js data/test.txt` produces valid JSON
+1. **Functional**: `bun scripts/slop-score/analyze.js data/test.txt` produces valid JSON
 2. **Accurate**: Output matches reference fixture generated from existing JS code
 3. **Tested**: All modules have passing unit tests
 4. **Documented**: README with usage examples
