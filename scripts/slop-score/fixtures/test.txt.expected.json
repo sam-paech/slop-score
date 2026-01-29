@@ -1,0 +1,838 @@
+{
+  "file": "test.txt",
+  "total_chars": 4163,
+  "total_words": 747,
+  "slop_score": 35.04352906863261,
+  "metrics": {
+    "slop_words_per_1k": 25.435073627844712,
+    "slop_trigrams_per_1k": 0,
+    "ngram_repetition_score": 223.68421052631578,
+    "not_x_but_y_per_1k_chars": 0.9608455440787893,
+    "lexical_diversity": {
+      "mattr_500": 0.4803709677419343,
+      "type_token_ratio": 0.42704149933065594,
+      "unique_words": 319,
+      "total_words": 747
+    },
+    "vocab_level": 5.682091116292476,
+    "avg_sentence_length": 15.89795918367347,
+    "avg_paragraph_length": 70.81818181818181,
+    "dialogue_frequency": 1.9216910881575786
+  },
+  "slop_word_hits": [
+    [
+      "rusted",
+      2
+    ],
+    [
+      "imperceptible",
+      2
+    ],
+    [
+      "flickered",
+      2
+    ],
+    [
+      "creaked",
+      1
+    ],
+    [
+      "whispering",
+      1
+    ],
+    [
+      "shadows",
+      1
+    ],
+    [
+      "faded",
+      1
+    ],
+    [
+      "pulsing",
+      1
+    ],
+    [
+      "glanced",
+      1
+    ],
+    [
+      "creak",
+      1
+    ],
+    [
+      "paused",
+      1
+    ],
+    [
+      "blinked",
+      1
+    ],
+    [
+      "hummed",
+      1
+    ],
+    [
+      "streetlights",
+      1
+    ],
+    [
+      "scent",
+      1
+    ],
+    [
+      "whisper",
+      1
+    ]
+  ],
+  "slop_trigram_hits": [],
+  "top_over_represented": {
+    "words": [
+      {
+        "word": "flickered",
+        "ratio": 20476.060262856867,
+        "count": 2
+      },
+      {
+        "word": "imperceptible",
+        "ratio": 17031.245101559376,
+        "count": 2
+      },
+      {
+        "word": "sneakers",
+        "ratio": 10096.242091227125,
+        "count": 13
+      },
+      {
+        "word": "aria",
+        "ratio": 6432.320175854404,
+        "count": 6
+      },
+      {
+        "word": "rusted",
+        "ratio": 6183.671341787001,
+        "count": 2
+      },
+      {
+        "word": "relic",
+        "ratio": 2245.155362113645,
+        "count": 2
+      },
+      {
+        "word": "blur",
+        "ratio": 1483.3594375076077,
+        "count": 2
+      },
+      {
+        "word": "hum",
+        "ratio": 1352.8398856678234,
+        "count": 2
+      },
+      {
+        "word": "heavier",
+        "ratio": 743.440812959345,
+        "count": 2
+      },
+      {
+        "word": "she'd",
+        "ratio": 521.6000905323131,
+        "count": 3
+      },
+      {
+        "word": "gods",
+        "ratio": 419.06017952999673,
+        "count": 4
+      },
+      {
+        "word": "bench",
+        "ratio": 321.61600879272083,
+        "count": 3
+      },
+      {
+        "word": "forgotten",
+        "ratio": 314.2951346474976,
+        "count": 3
+      },
+      {
+        "word": "grandfather",
+        "ratio": 302.86312491429294,
+        "count": 2
+      },
+      {
+        "word": "worn",
+        "ratio": 289.23203887243415,
+        "count": 2
+      },
+      {
+        "word": "strange",
+        "ratio": 241.14396344923946,
+        "count": 4
+      },
+      {
+        "word": "silly",
+        "ratio": 214.41067252848055,
+        "count": 2
+      },
+      {
+        "word": "seemed",
+        "ratio": 159.32223667749548,
+        "count": 4
+      },
+      {
+        "word": "warm",
+        "ratio": 153.93509998089834,
+        "count": 3
+      },
+      {
+        "word": "walked",
+        "ratio": 112.52432050011748,
+        "count": 2
+      },
+      {
+        "word": "joke",
+        "ratio": 109.96295425547584,
+        "count": 2
+      },
+      {
+        "word": "trees",
+        "ratio": 107.45989182471197,
+        "count": 2
+      },
+      {
+        "word": "skin",
+        "ratio": 97.12648190624061,
+        "count": 3
+      },
+      {
+        "word": "felt",
+        "ratio": 78.03265697904396,
+        "count": 4
+      },
+      {
+        "word": "wind",
+        "ratio": 76.07577740768042,
+        "count": 2
+      },
+      {
+        "word": "park",
+        "ratio": 72.82431272830908,
+        "count": 4
+      },
+      {
+        "word": "broken",
+        "ratio": 69.38193360823198,
+        "count": 2
+      },
+      {
+        "word": "mother",
+        "ratio": 60.57262498285859,
+        "count": 4
+      },
+      {
+        "word": "feet",
+        "ratio": 53.85752590951335,
+        "count": 2
+      },
+      {
+        "word": "voice",
+        "ratio": 44.796738852756626,
+        "count": 2
+      },
+      {
+        "word": "couldn't",
+        "ratio": 42.780553482321025,
+        "count": 2
+      },
+      {
+        "word": "wasn't",
+        "ratio": 41.432167914455704,
+        "count": 3
+      },
+      {
+        "word": "sound",
+        "ratio": 37.260304441270385,
+        "count": 2
+      },
+      {
+        "word": "didn't",
+        "ratio": 32.98888627664275,
+        "count": 6
+      },
+      {
+        "word": "almost",
+        "ratio": 32.16160087927208,
+        "count": 3
+      },
+      {
+        "word": "something",
+        "ratio": 28.530832453650998,
+        "count": 7
+      },
+      {
+        "word": "maybe",
+        "ratio": 28.01158336054542,
+        "count": 3
+      },
+      {
+        "word": "they're",
+        "ratio": 26.75085443204232,
+        "count": 3
+      },
+      {
+        "word": "else",
+        "ratio": 21.940493866859764,
+        "count": 2
+      },
+      {
+        "word": "things",
+        "ratio": 19.154745880105082,
+        "count": 4
+      },
+      {
+        "word": "way",
+        "ratio": 18.001738280764943,
+        "count": 7
+      },
+      {
+        "word": "feel",
+        "ratio": 16.878648075017626,
+        "count": 3
+      },
+      {
+        "word": "found",
+        "ratio": 16.494443138321376,
+        "count": 3
+      },
+      {
+        "word": "place",
+        "ratio": 15.393509998089833,
+        "count": 3
+      },
+      {
+        "word": "god",
+        "ratio": 14.165972652246916,
+        "count": 2
+      },
+      {
+        "word": "always",
+        "ratio": 13.719480226968761,
+        "count": 3
+      },
+      {
+        "word": "different",
+        "ratio": 13.528398856678235,
+        "count": 2
+      },
+      {
+        "word": "city",
+        "ratio": 12.91952060886857,
+        "count": 2
+      },
+      {
+        "word": "name",
+        "ratio": 12.91952060886857,
+        "count": 2
+      },
+      {
+        "word": "second",
+        "ratio": 12.338046396420644,
+        "count": 2
+      },
+      {
+        "word": "like",
+        "ratio": 10.238030131428433,
+        "count": 10
+      },
+      {
+        "word": "old",
+        "ratio": 9.35936531599433,
+        "count": 2
+      },
+      {
+        "word": "find",
+        "ratio": 9.146320151312507,
+        "count": 2
+      },
+      {
+        "word": "around",
+        "ratio": 8.938124486640769,
+        "count": 2
+      },
+      {
+        "word": "home",
+        "ratio": 8.151666415328856,
+        "count": 2
+      },
+      {
+        "word": "world",
+        "ratio": 6.78026079838492,
+        "count": 2
+      },
+      {
+        "word": "say",
+        "ratio": 6.78026079838492,
+        "count": 2
+      },
+      {
+        "word": "made",
+        "ratio": 6.327707550617964,
+        "count": 2
+      },
+      {
+        "word": "still",
+        "ratio": 6.327707550617964,
+        "count": 2
+      },
+      {
+        "word": "know",
+        "ratio": 6.271012379402228,
+        "count": 3
+      },
+      {
+        "word": "back",
+        "ratio": 4.800057049241629,
+        "count": 2
+      },
+      {
+        "word": "one",
+        "ratio": 3.566780590938976,
+        "count": 4
+      },
+      {
+        "word": "don't",
+        "ratio": 3.320828128843121,
+        "count": 2
+      }
+    ],
+    "bigrams": [
+      {
+        "phrase": "heavier like",
+        "ratio": 9847.600210084294,
+        "count": 2
+      },
+      {
+        "phrase": "couldn't name",
+        "ratio": 9847.600210084294,
+        "count": 2
+      },
+      {
+        "phrase": "didn't know",
+        "ratio": 9847.600210084294,
+        "count": 2
+      },
+      {
+        "phrase": "felt heavier",
+        "ratio": 7878.083108357505,
+        "count": 2
+      },
+      {
+        "phrase": "aria always",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "found park",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "park strange",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "place relic",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "relic patchwork",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "patchwork rusted",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "rusted playground",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "playground equipment",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "equipment overgrown",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "overgrown flower",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "beds bench",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "bench creaked",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "creaked like",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "animal mother",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "called dumpster",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "dumpster forgotten",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "place city's",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "city's discarded",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "discarded dreams",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "dreams broken",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "promises lay",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "wait curious",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "curious aria",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "aria however",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "saw treasure",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "trove secrets",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "secrets she'd",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "she'd spent",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "hours tracing",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "tracing cracks",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "cracks pavement",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "pavement finger",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "finger whispering",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "whispering rusted",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "rusted swing",
+        "ratio": 4923.800105042147,
+        "count": 1
+      },
+      {
+        "phrase": "swing sets",
+        "ratio": 4923.800105042147,
+        "count": 1
+      }
+    ],
+    "trigrams": [
+      {
+        "phrase": "felt heavier like",
+        "ratio": 6829.724793442801,
+        "count": 2
+      },
+      {
+        "phrase": "aria always found",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "always found park",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "found park strange",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "park strange place",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "strange place relic",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "place relic patchwork",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "relic patchwork rusted",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "patchwork rusted playground",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "rusted playground equipment",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "playground equipment overgrown",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "equipment overgrown flower",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "overgrown flower beds",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "flower beds bench",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "beds bench creaked",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "bench creaked like",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "creaked like dying",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "dying animal mother",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "animal mother called",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "mother called dumpster",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "called dumpster forgotten",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "dumpster forgotten things",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "forgotten things place",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "things place city's",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "place city's discarded",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "city's discarded dreams",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "discarded dreams broken",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "dreams broken promises",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "broken promises lay",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "promises lay wait",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "lay wait curious",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "wait curious aria",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "curious aria however",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "aria however saw",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "however saw treasure",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "saw treasure trove",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "treasure trove secrets",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "trove secrets she'd",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "secrets she'd spent",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      },
+      {
+        "phrase": "she'd spent hours",
+        "ratio": 3414.8623967214003,
+        "count": 1
+      }
+    ]
+  },
+  "contrast_matches": [
+    {
+      "pattern_name": "S1_RE_NOT_BUT",
+      "sentence": "Not just warm, but *alive*-a strange, pulsing heat that made her skin tingle.",
+      "match_text": "Not just warm, but",
+      "sentence_count": 1
+    },
+    {
+      "pattern_name": "S1_RE_NOT_BUT",
+      "sentence": "It wasn't loud, but it was *there*-a low, almost imperceptible vibration that seemed to echo in her bones.",
+      "match_text": "wasn't loud, but",
+      "sentence_count": 1
+    },
+    {
+      "pattern_name": "S1_RE_NOT_BUT",
+      "sentence": "The sneakers had a strange way of making her feel *connected*-not to the gods, but to something else.",
+      "match_text": "not to the gods, but",
+      "sentence_count": 1
+    },
+    {
+      "pattern_name": "S1_RE_EMBEDDED_NOT_JUST_SEP",
+      "sentence": "I don't know what they are, but they're not just shoes. They're.",
+      "match_text": "I don't know what they are, but they're not just shoes. They're",
+      "sentence_count": 2
+    }
+  ]
+}
