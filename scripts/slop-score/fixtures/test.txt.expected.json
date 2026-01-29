@@ -2,7 +2,7 @@
   "file": "test.txt",
   "total_chars": 4163,
   "total_words": 747,
-  "slop_score": 35.04352906863261,
+  "slop_score": 58.784807710165566,
   "metrics": {
     "slop_words_per_1k": 25.435073627844712,
     "slop_trigrams_per_1k": 0,

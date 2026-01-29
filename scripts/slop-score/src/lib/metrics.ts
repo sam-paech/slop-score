@@ -341,9 +341,28 @@ export function computeDialogueFrequency(text: string): number {
   return (quotes / 2 / chars) * 1000;
 }
 
+// Normalization ranges computed from leaderboard_results.json
+// These ranges have a 10% buffer added to min/max values
+const NORMALIZATION_RANGES = {
+  slop_words: { min: 2.1214882577844882, max: 43.924784489934034 },
+  slop_trigrams: { min: -0.027052241145113065, max: 1.2293612202273094 },
+  contrast: { min: -0.0323480255696472, max: 0.8881555162544392 }
+};
+
+// Normalize a value to 0-1 range based on the range object
+function normalizeValue(value: number, range: { min: number; max: number }): number {
+  const normalized = (value - range.min) / (range.max - range.min);
+  return Math.max(0, Math.min(1, normalized));
+}
+
 // Compute final slop score from components (matching slop-score.html formula)
+// Uses weighted combination: 60% slop words + 25% contrast + 15% slop trigrams
 export function computeSlopScore(wordScore: number, trigramScore: number, contrastRate: number): number {
-  return wordScore + trigramScore + (contrastRate * 10);
+  const normWords = normalizeValue(wordScore, NORMALIZATION_RANGES.slop_words);
+  const normTrigrams = normalizeValue(trigramScore, NORMALIZATION_RANGES.slop_trigrams);
+  const normContrast = normalizeValue(contrastRate, NORMALIZATION_RANGES.contrast);
+
+  return (normWords * 0.6 + normContrast * 0.25 + normTrigrams * 0.15) * 100;
 }
 
 export interface AnalyzeOptions {
