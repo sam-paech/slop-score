@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+#
+# slop-score - Analyze text for AI "slop" patterns
+#
+# Usage: ./slop-score input.txt [options]
+#
+
+set -e
+
+# Check if Bun is installed
+if ! command -v bun &> /dev/null; then
+    echo "Error: Bun is required but not installed." >&2
+    echo "" >&2
+    echo "Install Bun with:" >&2
+    echo "  curl -fsSL https://bun.sh/install | bash" >&2
+    echo "" >&2
+    echo "Or via Homebrew (macOS/Linux):" >&2
+    echo "  brew install oven-sh/bun/bun" >&2
+    echo "" >&2
+    echo "See https://bun.sh for more options." >&2
+    exit 1
+fi
+
+# Get the directory where this script lives
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Run the analyzer
+exec bun "$SCRIPT_DIR/scripts/slop-score/analyze.js" "$@"

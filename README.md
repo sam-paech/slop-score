@@ -41,6 +41,47 @@ Alternatively, serve this directory with:
 and browse to:
 http://localhost:8000
 
+### Command-Line Interface
+
+A CLI tool is available for analyzing text files directly from the terminal.
+
+**Requirements:** [Bun](https://bun.sh) runtime
+
+```bash
+# Install Bun (if not already installed)
+curl -fsSL https://bun.sh/install | bash
+
+# Basic usage
+./slop-score data/test.txt
+
+# Output to file
+./slop-score data/test.txt -o results.json
+
+# Markdown output
+./slop-score data/test.txt --format markdown
+
+# Include all optional fields (word hits, trigram hits, contrast matches, etc.)
+./slop-score data/test.txt --all
+
+# Read from stdin
+cat data/test.txt | ./slop-score -
+```
+
+**CLI Options:**
+
+| Option | Description |
+|--------|-------------|
+| `-o, --output <file>` | Write output to file (default: stdout) |
+| `-f, --format <type>` | Output format: `json` or `markdown` (default: json) |
+| `--slop-word-hits` | Include matched slop words with counts |
+| `--slop-trigram-hits` | Include matched slop trigrams with counts |
+| `--top-over-represented` | Include over-represented words/ngrams vs baseline |
+| `--contrast-matches` | Include "not X, but Y" pattern matches |
+| `--all` | Include all optional fields |
+| `-h, --help` | Show help |
+
+See `scripts/slop-score/README.md` for more details on development and output interpretation.
+
 ### Benchmarking Models
 A benchmarking script is also included. It generates 300 outputs from the same set of standardised prompts (Creative writing and essays) used for the leaderboard.
 
