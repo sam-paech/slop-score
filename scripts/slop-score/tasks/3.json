@@ -1,8 +1,0 @@
-{
-  "id": "3",
-  "subject": "Generate reference fixture from existing JS code",
-  "status": "pending",
-  "blockedBy": ["1"],
-  "blocks": ["11"],
-  "description": "## Task: Create reference output fixture using existing JS implementation\n\n### Context\nRead `scripts/slop-score/prompt.md` for full project context.\n\n### Prerequisites\n- Task #1 (project structure) must be complete\n\n### What to do\n1. Create a temporary Node.js script `reference-analyse.mjs` in the project root that:\n   - Uses the existing `js/` modules to analyze `data/test.txt`\n   - Outputs complete JSON with all metrics\n\n2. The script should:\n   - Patch `fetch` for local file loading (see `generate-leaderboard.mjs` for pattern)\n   - Import and use functions from `js/metrics.js`, `js/utils.js`, `js/contrast-detector.js`\n   - Load all data files (wordfreq, human profile, slop sets)\n   - Run full analysis on `data/test.txt`\n   - Output JSON matching the format in PRD.md\n\n3. Run the script and save output:\n```bash\nnode reference-analyse.mjs data/test.txt > scripts/slop-score/fixtures/test.txt.expected.json\n```\n\n4. The fixture should include ALL fields (base + optional) so we can verify complete accuracy.\n\n### Reference Files\n- Look at `slop-score.html` lines 1852-1975 for analysis orchestration\n- Look at `generate-leaderboard.mjs` for how to run JS modules in Node\n\n### Acceptance Criteria\n- [ ] `reference-analyse.mjs` exists and runs without errors\n- [ ] `scripts/slop-score/fixtures/test.txt.expected.json` exists\n- [ ] Fixture contains: file, total_chars, total_words, slop_score, metrics object\n- [ ] Fixture contains optional fields: slop_word_hits, slop_trigram_hits, contrast_matches\n- [ ] JSON is valid and properly formatted"
-}

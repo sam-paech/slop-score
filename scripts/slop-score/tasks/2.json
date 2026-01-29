@@ -1,8 +1,0 @@
-{
-  "id": "2",
-  "subject": "Copy and compress data files",
-  "status": "pending",
-  "blockedBy": ["1"],
-  "blocks": ["6", "9"],
-  "description": "## Task: Copy and compress data files to scripts/slop-score/data/\n\n### Context\nRead `scripts/slop-score/prompt.md` for full project context.\n\n### Prerequisites\n- Task #1 (project structure) must be complete\n\n### What to do\n1. Compress the large human_writing_profile.json (73MB → ~7MB):\n```bash\ngzip -c data/human_writing_profile.json > scripts/slop-score/data/human_writing_profile.json.gz\n```\n\n2. Copy the other data files:\n```bash\ncp data/large_en.msgpack.gz scripts/slop-score/data/\ncp data/slop_list.json scripts/slop-score/data/\ncp data/slop_list_bigrams.json scripts/slop-score/data/\ncp data/slop_list_trigrams.json scripts/slop-score/data/\n```\n\n### Files to create\n| Target File | Source | Action |\n|-------------|--------|--------|\n| `scripts/slop-score/data/human_writing_profile.json.gz` | `data/human_writing_profile.json` | gzip compress |\n| `scripts/slop-score/data/large_en.msgpack.gz` | `data/large_en.msgpack.gz` | copy |\n| `scripts/slop-score/data/slop_list.json` | `data/slop_list.json` | copy |\n| `scripts/slop-score/data/slop_list_bigrams.json` | `data/slop_list_bigrams.json` | copy |\n| `scripts/slop-score/data/slop_list_trigrams.json` | `data/slop_list_trigrams.json` | copy |\n\n### Acceptance Criteria\n- [ ] All 5 data files exist in `scripts/slop-score/data/`\n- [ ] `human_writing_profile.json.gz` is under 10MB\n- [ ] `large_en.msgpack.gz` is ~1.4MB\n- [ ] JSON files are valid (can be parsed)"
-}

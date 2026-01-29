@@ -1,8 +1,0 @@
-{
-  "id": "1",
-  "subject": "Create project structure and package.json",
-  "status": "pending",
-  "blockedBy": [],
-  "blocks": ["2", "3", "4", "5", "6", "7"],
-  "description": "## Task: Set up the project directory structure and package.json\n\n### Context\nRead `scripts/slop-score/prompt.md` for full project context.\n\n### What to do\n1. Create the directory structure:\n```bash\nmkdir -p scripts/slop-score/{src/lib,src/__tests__,data,fixtures}\n```\n\n2. Create `scripts/slop-score/package.json`:\n```json\n{\n  \"name\": \"slop-score-cli\",\n  \"private\": true,\n  \"type\": \"module\",\n  \"scripts\": {\n    \"test\": \"bun test\",\n    \"test:watch\": \"bun test --watch\",\n    \"build\": \"./build.sh\",\n    \"dev\": \"bun src/analyse.ts\"\n  },\n  \"dependencies\": {\n    \"@msgpack/msgpack\": \"^3.1.2\",\n    \"wink-pos-tagger\": \"^2.2.2\"\n  }\n}\n```\n\n3. Run `cd scripts/slop-score && bun install` to install dependencies\n\n### Acceptance Criteria\n- [ ] Directory structure exists: `src/lib`, `src/__tests__`, `data`, `fixtures`\n- [ ] `package.json` exists with correct content\n- [ ] `bun install` completes successfully\n- [ ] `node_modules` directory created with dependencies"
-}

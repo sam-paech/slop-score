@@ -1,8 +1,0 @@
-{
-  "id": "5",
-  "subject": "Port regexes-stage1.ts and regexes-stage2.ts",
-  "status": "pending",
-  "blockedBy": ["1"],
-  "blocks": ["8"],
-  "description": "## Task: Port regex pattern files to TypeScript\n\n### Context\nRead `scripts/slop-score/prompt.md` for full project context.\n\n### Prerequisites\n- Task #1 (project structure) must be complete\n\n### What to do\n\n#### Port regexes-stage1.ts\nCreate `scripts/slop-score/src/lib/regexes-stage1.ts` by porting from `js/regexes-stage1.js`:\n\n```typescript\n// Example structure - port actual patterns from source\nexport const STAGE1_PATTERNS: Record<string, RegExp> = {\n  S1_not_just_but: /not just .+?, but/gi,\n  // ... all other patterns from js/regexes-stage1.js\n};\n```\n\n#### Port regexes-stage2.ts\nCreate `scripts/slop-score/src/lib/regexes-stage2.ts` by porting from `js/regexes-stage2.js`:\n\n```typescript\n// Example structure - port actual patterns from source\nexport const STAGE2_PATTERNS: Record<string, RegExp> = {\n  // ... all patterns from js/regexes-stage2.js\n};\n```\n\n### Notes\n- These are direct ports - just add TypeScript types\n- Ensure regex flags are preserved (g, i, etc.)\n- Export as named constants\n- No tests needed for static regex patterns\n\n### Reference\n- Source: `js/regexes-stage1.js`, `js/regexes-stage2.js`\n\n### Acceptance Criteria\n- [ ] `src/lib/regexes-stage1.ts` exists with all patterns from source\n- [ ] `src/lib/regexes-stage2.ts` exists with all patterns from source\n- [ ] Files compile without TypeScript errors\n- [ ] All regex patterns are properly typed\n- [ ] Exports match what contrast-detector.ts will need"
-}
