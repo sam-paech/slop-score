@@ -417,24 +417,16 @@ async function main() {
   };
 
   // Run with concurrency limit
-  const pool = [];
-  for (const item of promptsToGenerate) {
-    const promise = processPrompt(item);
-    pool.push(promise);
+  const queue = [...promptsToGenerate];
+  await Promise.all(
+    Array.from({ length: workers }, async () => {
+      while (queue.length > 0) {
+        const item = queue.shift();
+        await processPrompt(item);
+      }
+    })
+  );
 
-    if (pool.length >= workers) {
-      await Promise.race(pool);
-      // Remove completed promises
-      pool.splice(0, pool.length, ...pool.filter(p => {
-        let done = false;
-        p.then(() => { done = true; }).catch(() => { done = true; });
-        return !done;
-      }));
-    }
-  }
-
-  // Wait for remaining
-  await Promise.all(pool);
   console.log('\n');
 
   // Mark completion
